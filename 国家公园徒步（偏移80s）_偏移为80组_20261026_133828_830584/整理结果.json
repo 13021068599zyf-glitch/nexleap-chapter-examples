@@ -1,0 +1,540 @@
+{
+  "exported_at": "2026-10-26T13:38:28",
+  "image_root": "F:\\文件\\科研\\gptwork\\nexleap\\用户旅程模拟工作流\\03_旅行数据库\\视频素材\\抽帧图",
+  "filters": {
+    "day_id": 2,
+    "day_title": "国家公园徒步（偏移80s）",
+    "phase": 8,
+    "offset_seconds": 80
+  },
+  "exported_image_count": 24,
+  "days": [
+    {
+      "day_id": 2,
+      "title": "国家公园徒步（偏移80s）",
+      "intro": "从山脚松林出发，沿岩石山径持续爬升，在山脊平台眺望层叠群峰。午后继续穿过秋林、驮队与花岗岩坡地，循着溪流和瀑布下行，越过木桥后沿林道回到山谷营地，为一天的环线徒步收尾。",
+      "position": 2,
+      "updated_at": "2026-10-26T13:37:49",
+      "chapter_count": 5,
+      "image_count": 24,
+      "chapter_ids": [
+        12,
+        13,
+        15,
+        16,
+        17
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "chapter_id": 12,
+      "title": "沿石径登向高处",
+      "intro": "从松林起步，山径在岩壁与树影间不断抬升。随着海拔增加，山谷逐渐退到脚下，最后抵达 Union Point，让花岗岩群峰第一次完整进入视野。",
+      "cover_image_id": 2504,
+      "updated_at": "2026-10-26T13:36:11",
+      "day_id": 2,
+      "tags": [
+        "出发",
+        "登山",
+        "松林"
+      ],
+      "image_count": 5,
+      "covers": {
+        "8": {
+          "image_id": 2504,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000009_00-01-20__00-01-30__frame_00__abs_00-01-20.000.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 2504,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000009_00-01-20__00-01-30__frame_00__abs_00-01-20.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000009_00-01-20__00-01-30__frame_00__abs_00-01-20.000.jpg",
+          "time_label": "00:01:20.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从咖喱村游客服务亭旁起步，高大的松林为漫长山路拉开序幕。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 1,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2510,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000081_00-13-20__00-13-30__frame_00__abs_00-13-26.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000081_00-13-20__00-13-30__frame_00__abs_00-13-26.000.jpg",
+          "time_label": "00:13:26.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "石壁夹出的窄径沿林坡向前延伸，潮湿路面映着树隙间的天光。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 2,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2511,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000093_00-15-20__00-15-30__frame_00__abs_00-15-20.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000093_00-15-20__00-15-30__frame_00__abs_00-15-20.000.jpg",
+          "time_label": "00:15:20.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "前方徒步者踏上裸露石阶，队伍在浓密林荫中继续抬升。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 3,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2526,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000249_00-41-20__00-41-30__frame_00__abs_00-41-24.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000249_00-41-20__00-41-30__frame_00__abs_00-41-24.000.jpg",
+          "time_label": "00:41:24.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "穿过碎石坡向山谷回望，林海与峭壁已经渐渐落到脚下。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 5,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2543,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000429_01-11-20__01-11-30__frame_01__abs_01-11-29.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000429_01-11-20__01-11-30__frame_01__abs_01-11-29.000.jpg",
+          "time_label": "01:11:29.000",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "抵达 Union Point 观景处，花岗岩群峰越过低矮灌木铺展开来。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 7,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 5,
+      "cover_image_path": "国家公园/national_park__phase_08_offset_080s__national_park_000009_00-01-20__00-01-30__frame_00__abs_00-01-20.000.jpg"
+    },
+    {
+      "chapter_id": 13,
+      "title": "崖顶放眼眺望",
+      "intro": "离开密林后，山脊平台骤然打开。越过近处的石壁与松林显出轮廓。重叠山脉向远方铺展，漫长的上坡在这里换来一天中最开阔的眺望。",
+      "cover_image_id": 2566,
+      "updated_at": "2026-10-26T13:34:11",
+      "day_id": 2,
+      "tags": [
+        "观景",
+        "半圆顶",
+        "山景"
+      ],
+      "image_count": 4,
+      "covers": {
+        "8": {
+          "image_id": 2566,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000693_01-55-20__01-55-30__frame_00__abs_01-55-23.000.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 2561,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000645_01-47-20__01-47-30__frame_00__abs_01-47-21.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000645_01-47-20__01-47-30__frame_00__abs_01-47-21.000.jpg",
+          "time_label": "01:47:21.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "平整山路绕过巨石和高松，开阔的山脊平台就在前方。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 4,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2563,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000669_01-51-20__01-51-30__frame_00__abs_01-51-23.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000669_01-51-20__01-51-30__frame_00__abs_01-51-23.000.jpg",
+          "time_label": "01:51:23.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "走出密林来到山脊平台，游人在石墙旁停步休息远眺。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 3,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2565,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000681_01-53-20__01-53-30__frame_00__abs_01-53-25.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000681_01-53-20__01-53-30__frame_00__abs_01-53-25.000.jpg",
+          "time_label": "01:53:25.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "半圆顶从近处花岗岩台地外升起，深邃山谷在其下方豁然展开。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 1,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2566,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000693_01-55-20__01-55-30__frame_00__abs_01-55-23.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000693_01-55-20__01-55-30__frame_00__abs_01-55-23.000.jpg",
+          "time_label": "01:55:23.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "群峰与森林铺满整个地平线，漫长攀登在这一刻得到回报。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 2,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 4,
+      "cover_image_path": "国家公园/national_park__phase_08_offset_080s__national_park_000693_01-55-20__01-55-30__frame_00__abs_01-55-23.000.jpg"
+    },
+    {
+      "chapter_id": 15,
+      "title": "越过瀑布与石谷",
+      "intro": "山路来到溪流与花岗岩交汇的地带，清水从巨石缝隙跌落，木桥连接起两侧岩台。越过开阔石谷后，路线沿碎石坡转入林下，行程开始由高处向山谷收束。",
+      "cover_image_id": 2642,
+      "updated_at": "2026-10-26T13:32:00",
+      "day_id": 2,
+      "tags": [
+        "瀑布",
+        "花岗岩",
+        "溪流"
+      ],
+      "image_count": 5,
+      "covers": {
+        "8": {
+          "image_id": 2642,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001569_04-21-20__04-21-30__frame_00__abs_04-21-27.000.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 2632,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001461_04-03-20__04-03-30__frame_00__abs_04-03-20.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001461_04-03-20__04-03-30__frame_00__abs_04-03-20.000.jpg",
+          "time_label": "04:03:20.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "清流从花岗岩缝隙中跌落，狭窄水道在巨石之间冲出白浪。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 4,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2633,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001461_04-03-20__04-03-30__frame_01__abs_04-03-27.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001461_04-03-20__04-03-30__frame_01__abs_04-03-27.000.jpg",
+          "time_label": "04:03:27.000",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "跨过木桥进入开阔石谷，陡峭岩壁在前方直立而起。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 3,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2637,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001509_04-11-20__04-11-30__frame_00__abs_04-11-24.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001509_04-11-20__04-11-30__frame_00__abs_04-11-24.000.jpg",
+          "time_label": "04:11:24.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "游人散落在宽阔岩台之间，巨石与平缓水道让脚步稍作停顿。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 2,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2642,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001569_04-21-20__04-21-30__frame_00__abs_04-21-27.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001569_04-21-20__04-21-30__frame_00__abs_04-21-27.000.jpg",
+          "time_label": "04:21:27.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "抬头望向覆满松林的花岗岩穹顶，山谷的尺度显得格外辽阔。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 5,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2645,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001605_04-27-20__04-27-30__frame_00__abs_04-27-23.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001605_04-27-20__04-27-30__frame_00__abs_04-27-23.000.jpg",
+          "time_label": "04:27:23.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿碎石与石阶向林下穿行，路线开始转入持续下山的节奏。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 1,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 5,
+      "cover_image_path": "国家公园/national_park__phase_08_offset_080s__national_park_001569_04-21-20__04-21-30__frame_00__abs_04-21-27.000.jpg"
+    },
+    {
+      "chapter_id": 16,
+      "title": "沿林道回到营地",
+      "intro": "跨过木桥后，路面逐渐平缓，宽阔林道把人带回低处。金黄草木沿小径展开，营地木屋与停车区相继出现，一天的跋涉终于回到有人烟的地方。",
+      "cover_image_id": 2683,
+      "updated_at": "2026-10-26T13:34:37",
+      "day_id": 2,
+      "tags": [
+        "返程",
+        "木桥",
+        "营地"
+      ],
+      "image_count": 5,
+      "covers": {
+        "8": {
+          "image_id": 2683,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_002037_05-39-20__05-39-30__frame_00__abs_05-39-22.000.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 2669,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001869_05-11-20__05-11-30__frame_00__abs_05-11-25.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001869_05-11-20__05-11-30__frame_00__abs_05-11-25.000.jpg",
+          "time_label": "05:11:25.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "走上 Vernal Fall 木桥，清晰的路标提醒终点已不再遥远。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 3,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2677,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001965_05-27-20__05-27-30__frame_00__abs_05-27-24.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001965_05-27-20__05-27-30__frame_00__abs_05-27-24.000.jpg",
+          "time_label": "05:27:24.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "宽阔林道在高松之间舒展开来，连续下坡让脚步渐渐放松。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 6,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2683,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_002037_05-39-20__05-39-30__frame_00__abs_05-39-22.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_002037_05-39-20__05-39-30__frame_00__abs_05-39-22.000.jpg",
+          "time_label": "05:39:22.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "金黄草木贴着小径延伸，回程在安静秋色中慢慢展开。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 1,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2684,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_002049_05-41-20__05-41-30__frame_00__abs_05-41-22.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_002049_05-41-20__05-41-30__frame_00__abs_05-41-22.000.jpg",
+          "time_label": "05:41:22.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "营地木屋从树林后出现，一天的徒步终于回到有人烟的地方。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 4,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2686,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_002061_05-43-20__05-43-30__frame_01__abs_05-43-25.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_002061_05-43-20__05-43-30__frame_01__abs_05-43-25.000.jpg",
+          "time_label": "05:43:25.000",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "穿过停车区与木屋之间的空地，旅程在归来的人声中结束。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 5,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 5,
+      "cover_image_path": "国家公园/national_park__phase_08_offset_080s__national_park_002037_05-39-20__05-39-30__frame_00__abs_05-39-22.000.jpg"
+    },
+    {
+      "chapter_id": 17,
+      "title": "穿过秋林与驮队",
+      "intro": "沿山路继续穿行，秋色灌木、驮队与高大松林先后出现在途中。路径时而绕过巨石，时而贴近裸露的花岗岩坡，远处山峰也在枝叶间反复出现。",
+      "cover_image_id": 2584,
+      "updated_at": "2026-10-26T13:36:52",
+      "day_id": 2,
+      "tags": [
+        "秋林",
+        "驮队",
+        "山径"
+      ],
+      "image_count": 5,
+      "covers": {
+        "8": {
+          "image_id": 2584,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000909_02-31-20__02-31-30__frame_00__abs_02-31-23.000.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 2578,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000837_02-19-20__02-19-30__frame_00__abs_02-19-26.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000837_02-19-20__02-19-30__frame_00__abs_02-19-26.000.jpg",
+          "time_label": "02:19:26.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "山径穿过染上秋色的林缘，脚下落叶为前路添上一层暖色。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 1,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2580,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000861_02-23-20__02-23-30__frame_00__abs_02-23-26.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000861_02-23-20__02-23-30__frame_00__abs_02-23-26.000.jpg",
+          "time_label": "02:23:26.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "满载行囊的驮队从身旁经过，安静山路短暂有了另一种节奏。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 2,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2584,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_000909_02-31-20__02-31-30__frame_00__abs_02-31-23.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_000909_02-31-20__02-31-30__frame_00__abs_02-31-23.000.jpg",
+          "time_label": "02:31:23.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "灌木与松树夹住土路，远处岩峰在枝叶之间时隐时现。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 3,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2630,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001437_03-59-20__03-59-30__frame_00__abs_03-59-21.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001437_03-59-20__03-59-30__frame_00__abs_03-59-21.000.jpg",
+          "time_label": "03:59:21.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "循着林间石阶继续下行，同行者的身影把人带向更深的谷地。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 6,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 2652,
+          "rel_path": "国家公园/national_park__phase_08_offset_080s__national_park_001677_04-39-20__04-39-30__frame_00__abs_04-39-28.000.jpg",
+          "source": "国家公园",
+          "filename": "national_park__phase_08_offset_080s__national_park_001677_04-39-20__04-39-30__frame_00__abs_04-39-28.000.jpg",
+          "time_label": "04:39:28.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "贴着裸露花岗岩坡向前，陡峭双峰已经近在眼前。",
+          "available": true,
+          "updated_at": "2026-10-26T13:32:00",
+          "position": 7,
+          "tags": [],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 5,
+      "cover_image_path": "国家公园/national_park__phase_08_offset_080s__national_park_000909_02-31-20__02-31-30__frame_00__abs_02-31-23.000.jpg"
+    }
+  ]
+}

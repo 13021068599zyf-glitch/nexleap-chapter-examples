@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfbfa">
+  <title>Chapter 范例查看器</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fbfbfa;
+      --surface: #fff;
+      --ink: #222322;
+      --muted: #747774;
+      --faint: #a1a39f;
+      --line: #e7e7e4;
+      --soft: #f3f3f0;
+      --green-soft: #edf3ec;
+      --green: #3f6548;
+      --sans: "SF Pro Display", "Helvetica Neue", "Segoe UI", "Microsoft YaHei UI", sans-serif;
+      --serif: "Songti SC", "STSong", "SimSun", serif;
+      --mono: "SFMono-Regular", Consolas, monospace;
+      font-family: var(--sans);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { scroll-behavior: smooth; }
+    body { min-width: 320px; margin: 0; background: var(--paper); color: var(--ink); }
+    button { font: inherit; }
+    button:focus-visible, a:focus-visible { outline: 2px solid #78937d; outline-offset: 3px; }
+    .topbar { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 clamp(20px, 4vw, 58px); border-bottom: 1px solid var(--line); }
+    .brand strong, .brand small { display: block; }
+    .brand strong { font-size: 14px; font-weight: 650; }
+    .brand small { margin-top: 3px; color: var(--faint); font-family: var(--mono); font-size: 7px; letter-spacing: .13em; }
+    .top-actions { display: flex; align-items: center; gap: 12px; }
+    .package-name { max-width: 340px; overflow: hidden; color: var(--muted); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+    .folder-button { min-height: 34px; padding: 0 12px; border: 1px solid #292b29; border-radius: 5px; background: #292b29; color: #fff; cursor: pointer; font-size: 10px; }
+    .folder-button:hover { background: #414341; }
+    .refresh-button { min-height: 34px; padding: 0 10px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--ink); cursor: pointer; font-size: 10px; }
+    .refresh-button:hover { background: var(--soft); }
+    .empty { min-height: calc(100vh - 64px); display: grid; place-items: center; padding: 40px 20px; }
+    .empty-card { width: min(560px, 100%); padding: 48px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); text-align: center; }
+    .empty-mark { width: 42px; height: 42px; display: grid; place-items: center; margin: 0 auto 22px; border: 1px solid #dfe7de; border-radius: 7px; background: var(--green-soft); color: var(--green); font-family: var(--mono); font-size: 12px; }
+    .empty h1 { margin: 0 0 12px; font-family: var(--serif); font-size: clamp(28px, 5vw, 42px); font-weight: 600; letter-spacing: -.04em; }
+    .empty p { max-width: 410px; margin: 0 auto 24px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .privacy-note { display: block; margin-top: 13px; color: var(--faint); font-size: 8px; }
+    .error { max-width: 560px; margin: 18px auto 0; padding: 11px 13px; border: 1px solid #efdada; border-radius: 6px; background: #fdf4f4; color: #8a3f3d; font-size: 10px; line-height: 1.6; }
+    .viewer { width: min(1380px, 100%); margin: 0 auto; }
+    .day-stage { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: clamp(34px, 5vw, 78px); padding: clamp(42px, 6vw, 86px) clamp(20px, 4vw, 58px); border-bottom: 1px solid var(--line); }
+    .day-visual { position: relative; min-height: 390px; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
+    .day-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(.84) contrast(.97); }
+    .group-badge { position: absolute; right: 12px; bottom: 12px; padding: 6px 8px; border: 1px solid rgb(0 0 0 / 8%); border-radius: 4px; background: rgb(255 255 255 / 92%); color: #555754; font-family: var(--mono); font-size: 8px; }
+    .day-copy { align-self: center; }
+    .eyebrow { margin: 0 0 18px; color: var(--green); font-family: var(--mono); font-size: 8px; letter-spacing: .14em; }
+    .day-title { max-width: 620px; margin: 0 0 21px; font-family: var(--serif); font-size: clamp(36px, 4.4vw, 62px); font-weight: 600; letter-spacing: -.04em; line-height: 1.08; }
+    .day-intro { max-width: 620px; margin: 0; color: #626561; font-size: 13px; line-height: 1.9; }
+    .stats { display: flex; gap: clamp(26px, 4vw, 54px); margin: 34px 0 0; }
+    .stats div { display: grid; gap: 4px; }
+    .stats strong { font-family: var(--serif); font-size: 23px; font-weight: 600; }
+    .stats span { color: var(--faint); font-size: 9px; }
+    .day-tabs-wrap { position: sticky; top: 0; z-index: 5; padding: 14px clamp(20px, 4vw, 58px); border-bottom: 1px solid var(--line); background: rgb(251 251 250 / 95%); backdrop-filter: blur(10px); }
+    .label { display: block; margin-bottom: 6px; color: var(--faint); font-family: var(--mono); font-size: 7px; letter-spacing: .12em; }
+    .day-tabs { display: flex; gap: 5px; overflow-x: auto; }
+    .day-tab { flex: 0 0 auto; display: grid; gap: 2px; padding: 7px 10px; border: 1px solid transparent; border-radius: 5px; background: transparent; color: #60635f; cursor: pointer; font-size: 10px; text-align: left; }
+    .day-tab small { color: var(--faint); font-family: var(--mono); font-size: 7px; }
+    .day-tab:hover { background: var(--soft); }
+    .day-tab.active { border-color: #dfe7de; background: var(--green-soft); color: #31563a; }
+    .journey { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(34px, 5vw, 72px); padding: clamp(48px, 6vw, 84px) clamp(20px, 4vw, 58px) 92px; }
+    .route-heading { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 11px; border-bottom: 1px solid var(--line); }
+    .route-heading strong { font-size: 12px; }
+    .route-heading span { color: var(--faint); font-size: 8px; }
+    .route { display: grid; }
+    .route-item { width: 100%; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 11px; align-items: center; padding: 12px 8px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: inherit; cursor: pointer; text-align: left; }
+    .route-item:hover { background: #f6f6f4; }
+    .route-item.active { background: var(--green-soft); }
+    .route-item img { width: 48px; aspect-ratio: 1; border-radius: 4px; object-fit: cover; filter: saturate(.78); }
+    .route-item small, .route-item strong, .route-item em { display: block; }
+    .route-item small { margin-bottom: 3px; color: var(--faint); font-family: var(--mono); font-size: 7px; }
+    .route-item strong { overflow: hidden; font-size: 11px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+    .route-item em { margin-top: 4px; color: var(--muted); font-size: 8px; font-style: normal; }
+    .chapter { min-width: 0; }
+    .chapter-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 38%); gap: clamp(28px, 5vw, 62px); align-items: center; padding-bottom: 50px; border-bottom: 1px solid var(--line); }
+    .sequence { margin: 0 0 12px; color: var(--green); font-family: var(--mono); font-size: 8px; letter-spacing: .12em; }
+    .chapter-title { margin: 0 0 14px; font-family: var(--serif); font-size: clamp(30px, 3.5vw, 48px); font-weight: 600; letter-spacing: -.035em; line-height: 1.12; }
+    .chapter-intro { max-width: 650px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.85; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 17px; }
+    .tags span { padding: 4px 7px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: 8px; }
+    .cover { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
+    .cover img { width: 100%; aspect-ratio: 16 / 10; display: block; object-fit: cover; filter: saturate(.86); }
+    .cover figcaption { display: flex; justify-content: space-between; padding: 9px 10px; border-top: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 8px; }
+    .gallery-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding: 44px 0 18px; }
+    .gallery-head span { color: var(--green); font-family: var(--mono); font-size: 7px; letter-spacing: .12em; }
+    .gallery-head h3 { margin: 5px 0 0; font-family: var(--serif); font-size: 21px; font-weight: 600; }
+    .gallery-head p { margin: 0; color: var(--faint); font-size: 8px; }
+    .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 18px; }
+    .image-entry { min-width: 0; margin: 0; }
+    .image-entry button { width: 100%; display: block; overflow: hidden; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); cursor: zoom-in; }
+    .image-entry img { width: 100%; aspect-ratio: 16 / 10; display: block; object-fit: cover; filter: saturate(.88); transition: transform .25s ease; }
+    .image-entry:hover img { transform: scale(1.012); }
+    .image-entry figcaption { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 9px; padding-top: 10px; }
+    .index { color: var(--green); font-family: var(--mono); font-size: 9px; }
+    .time { display: block; margin-bottom: 4px; color: var(--faint); font-family: var(--mono); font-size: 7px; }
+    .note { margin: 0; color: #555854; font-size: 10px; line-height: 1.7; }
+    .warning { margin-top: 28px; padding: 10px 12px; border: 1px solid #eadfca; border-radius: 6px; background: #fbf3db; color: #795d25; font-size: 9px; }
+    dialog { width: min(1040px, calc(100vw - 32px)); max-height: calc(100vh - 32px); padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); box-shadow: 0 18px 70px rgb(0 0 0 / 18%); }
+    dialog::backdrop { background: rgb(32 33 31 / 72%); }
+    .dialog-close { position: absolute; z-index: 2; top: 10px; right: 10px; width: 30px; height: 30px; border: 1px solid rgb(255 255 255 / 45%); border-radius: 5px; background: rgb(30 31 29 / 70%); color: #fff; cursor: pointer; font-size: 19px; }
+    .dialog-image { max-height: 70vh; display: grid; place-items: center; background: #20211f; }
+    .dialog-image img { width: 100%; max-height: 70vh; display: block; object-fit: contain; }
+    .dialog-copy { padding: 19px 22px 22px; }
+    .dialog-copy small { color: var(--green); font-family: var(--mono); font-size: 8px; }
+    .dialog-copy h2 { margin: 7px 0; font-family: var(--serif); font-size: 22px; }
+    .dialog-copy p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+    @media (max-width: 940px) {
+      .day-stage { grid-template-columns: 1fr; }
+      .day-visual { min-height: 360px; }
+      .journey { grid-template-columns: 1fr; }
+      .route { grid-template-columns: repeat(3, minmax(190px, 1fr)); gap: 6px; overflow-x: auto; padding-bottom: 10px; }
+      .route-item { border: 1px solid var(--line); border-radius: 6px; }
+    }
+    @media (max-width: 680px) {
+      .topbar { height: auto; align-items: flex-start; padding-top: 13px; padding-bottom: 13px; }
+      .package-name { display: none; }
+      .empty-card { padding: 34px 22px; }
+      .day-stage { padding-top: 28px; }
+      .day-visual { min-height: 260px; }
+      .day-title { font-size: 36px; }
+      .journey { padding-top: 38px; }
+      .route { grid-template-columns: repeat(5, minmax(190px, 1fr)); }
+      .chapter-head { grid-template-columns: 1fr; }
+      .cover { grid-row: 1; }
+      .gallery { grid-template-columns: 1fr; }
+      .gallery-head { align-items: start; flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><strong>Chapter 范例查看器</strong><small>NEXLEAP · STANDALONE VIEWER</small></div>
+    <div class="top-actions"><span id="packageName" class="package-name">尚未连接 Day 目录</span><button id="refreshButton" class="refresh-button" type="button" data-refresh hidden>刷新目录</button><button class="folder-button" type="button" data-pick-folder>选择 Day 根目录</button></div>
+    <input id="folderInput" type="file" webkitdirectory directory multiple hidden>
+  </header>
+
+  <main id="emptyState" class="empty">
+    <section class="empty-card">
+      <div class="empty-mark">CH</div>
+      <h1>打开 Day 范例目录</h1>
+      <p>把多个平台导出的 Day 文件夹放进同一个根目录，再选择这个根目录。查看器会自动汇总所有 Day、Chapter、封面、图片及备注。</p>
+      <button class="folder-button" type="button" data-pick-folder>选择 Day 根目录</button>
+      <small class="privacy-note">文件只在当前浏览器中读取。首次授权后，重新打开会尝试自动载入。</small>
+      <div id="errorMessage" class="error" hidden></div>
+    </section>
+  </main>
+
+  <main id="viewer" class="viewer" hidden>
+    <section class="day-stage">
+      <div class="day-visual"><img id="dayHero" alt=""><span id="groupBadge" class="group-badge"></span></div>
+      <div class="day-copy">
+        <p class="eyebrow">CHAPTER EXAMPLE / 范例记录</p>
+        <h1 id="dayTitle" class="day-title"></h1>
+        <p id="dayIntro" class="day-intro"></p>
+        <div class="stats"><div><strong id="chapterCount"></strong><span>个 Chapter</span></div><div><strong id="imageCount"></strong><span>张画面</span></div><div><strong id="offsetValue"></strong><span>当前偏移</span></div></div>
+      </div>
+    </section>
+    <section class="day-tabs-wrap"><span class="label">选择 DAY</span><nav id="dayTabs" class="day-tabs" aria-label="Day 列表"></nav></section>
+    <section class="journey">
+      <aside><div class="route-heading"><strong>Chapter 列表</strong><span>按导出顺序</span></div><nav id="route" class="route"></nav></aside>
+      <article class="chapter">
+        <section id="chapterHead" class="chapter-head">
+          <div><p id="sequence" class="sequence"></p><h2 id="chapterTitle" class="chapter-title"></h2><p id="chapterIntro" class="chapter-intro"></p><div id="tags" class="tags"></div></div>
+          <figure class="cover"><img id="chapterCover" alt=""><figcaption><span id="coverLabel"></span><strong id="chapterImageCount"></strong></figcaption></figure>
+        </section>
+        <div class="gallery-head"><div><span>IMAGE NOTES</span><h3>图片与备注</h3></div><p>点击图片查看大图</p></div>
+        <section id="gallery" class="gallery" aria-label="Chapter 图片"></section>
+        <div id="missingWarning" class="warning" hidden></div>
+      </article>
+    </section>
+  </main>
+
+  <dialog id="imageDialog">
+    <button id="dialogClose" class="dialog-close" type="button" aria-label="关闭">×</button>
+    <div class="dialog-image"><img id="dialogImage" alt=""></div>
+    <div class="dialog-copy"><small id="dialogMeta"></small><h2 id="dialogTitle"></h2><p id="dialogNote"></p></div>
+  </dialog>
+
+  <script>
+    const state = { days: [], dayIndex: 0, chapterIndex: 0, urls: [], directoryHandle: null, rootName: "", packageCount: 0 };
+    const $ = (selector) => document.querySelector(selector);
+    const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+
+    function relativePath(file) {
+      return String(file.webkitRelativePath || file.name).split(/[\\/]+/).filter(Boolean).join("/");
+    }
+
+    function releaseUrls() {
+      state.urls.forEach((url) => URL.revokeObjectURL(url));
+      state.urls = [];
+    }
+
+    function fileUrl(file) {
+      const url = URL.createObjectURL(file);
+      state.urls.push(url);
+      return url;
+    }
+
+    function showError(message) {
+      $("#errorMessage").textContent = message;
+      $("#errorMessage").hidden = false;
+      $("#emptyState").hidden = false;
+      $("#viewer").hidden = true;
+    }
+
+    async function parsePackage(records, manifestRecord, packageName) {
+      let manifest;
+      try {
+        manifest = JSON.parse(await manifestRecord.file.text());
+      } catch (error) {
+        throw new Error(`${packageName} 的整理结果.json 无法读取：${error.message}`);
+      }
+      if (!Array.isArray(manifest.days) || !Array.isArray(manifest.chapters)) throw new Error(`${packageName} 的整理结果.json 缺少 Day 或 Chapter 数据`);
+
+      const physicalImages = new Map();
+      for (const record of records) {
+        const file = record.file;
+        if (!/\.(?:jpe?g|png|webp)$/i.test(file.name)) continue;
+        const parts = record.path.split("/");
+        const dayPart = parts.findIndex((part) => /^\d+_(?:Day_|未归入Day)/.test(part));
+        const imagePart = parts.lastIndexOf("图片");
+        if (dayPart < 0 || imagePart < 0 || imagePart <= dayPart + 1) continue;
+        const dayMatch = parts[dayPart].match(/^(\d+)_/);
+        const chapterMatch = parts[dayPart + 1].match(/^(\d+)_/);
+        const imageMatch = parts[imagePart + 1]?.match(/^(\d+)_/);
+        if (dayMatch && chapterMatch && imageMatch) physicalImages.set(`${Number(dayMatch[1])}:${Number(chapterMatch[1])}:${Number(imageMatch[1])}`, file);
+      }
+
+      let missing = 0;
+      const days = manifest.days.map((day, dayIndex) => {
+        const chapters = manifest.chapters.filter((chapter) => String(chapter.day_id) === String(day.day_id)).map((chapter, chapterIndex) => {
+          const images = (chapter.images || []).map((image, imageIndex) => {
+            const file = physicalImages.get(`${dayIndex + 1}:${chapterIndex + 1}:${imageIndex + 1}`);
+            if (!file) { missing += 1; return null; }
+            return { ...image, url: fileUrl(file) };
+          }).filter(Boolean);
+          const cover = images.find((image) => image.rel_path === chapter.cover_image_path) || images[0] || null;
+          return { ...chapter, images, cover };
+        });
+        return { ...day, chapters, __manifest: manifest, __packageName: packageName, __missing: missing };
+      });
+      days.forEach((day) => { day.__missing = missing; });
+      return days;
+    }
+
+    function activateDays(days, rootName, packageCount, directoryHandle = null) {
+      if (!days.length) throw new Error("所选目录中没有可显示的 Day");
+      if (!days.some((day) => day.chapters.some((chapter) => chapter.images.length))) throw new Error("没有找到与整理结果对应的图片文件");
+      state.days = days;
+      state.dayIndex = 0;
+      state.chapterIndex = 0;
+      state.rootName = rootName;
+      state.packageCount = packageCount;
+      state.directoryHandle = directoryHandle;
+      $("#packageName").textContent = `${rootName} · ${packageCount} 个 Day 文件夹`;
+      $("#refreshButton").hidden = !directoryHandle;
+      $("#errorMessage").hidden = true;
+      $("#emptyState").hidden = true;
+      $("#viewer").hidden = false;
+      render();
+    }
+
+    async function loadRecords(records, rootName, directoryHandle = null) {
+      releaseUrls();
+      const manifests = records.filter((record) => record.file.name === "整理结果.json");
+      if (!manifests.length) throw new Error("所选目录及其子目录中没有找到整理结果.json");
+      const packages = [];
+      for (const manifestRecord of manifests) {
+        const basePath = manifestRecord.path.includes("/") ? manifestRecord.path.slice(0, manifestRecord.path.lastIndexOf("/")) : "";
+        const prefix = basePath ? `${basePath}/` : "";
+        const packageRecords = records.filter((record) => !prefix || record.path.startsWith(prefix));
+        const packageName = basePath.split("/").filter(Boolean).pop() || rootName || "整理结果包";
+        packages.push(...await parsePackage(packageRecords, manifestRecord, packageName));
+      }
+      activateDays(packages, rootName || "Chapter 范例数据", manifests.length, directoryHandle);
+    }
+
+    async function loadFolder(files) {
+      const records = [...files].map((file) => ({ file, path: relativePath(file) }));
+      const rootName = records[0]?.path.split("/")[0] || "Chapter 范例数据";
+      await loadRecords(records, rootName, null);
+    }
+
+    async function collectDirectory(handle, prefix = handle.name) {
+      const records = [];
+      for await (const [name, entry] of handle.entries()) {
+        const path = `${prefix}/${name}`;
+        if (entry.kind === "file") records.push({ file: await entry.getFile(), path });
+        else records.push(...await collectDirectory(entry, path));
+      }
+      return records;
+    }
+
+    async function loadDirectory(handle) {
+      $("#packageName").textContent = `正在读取 ${handle.name}…`;
+      const records = await collectDirectory(handle);
+      await loadRecords(records, handle.name, handle);
+    }
+
+    function openDirectoryDatabase() {
+      return new Promise((resolve, reject) => {
+        const request = indexedDB.open("chapter-example-viewer", 1);
+        request.onupgradeneeded = () => request.result.createObjectStore("settings");
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function saveDirectoryHandle(handle) {
+      const database = await openDirectoryDatabase();
+      await new Promise((resolve, reject) => {
+        const request = database.transaction("settings", "readwrite").objectStore("settings").put(handle, "root-directory");
+        request.onsuccess = resolve;
+        request.onerror = () => reject(request.error);
+      });
+      database.close();
+    }
+
+    async function getSavedDirectoryHandle() {
+      const database = await openDirectoryDatabase();
+      const handle = await new Promise((resolve, reject) => {
+        const request = database.transaction("settings").objectStore("settings").get("root-directory");
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = () => reject(request.error);
+      });
+      database.close();
+      return handle;
+    }
+
+    async function pickDirectory() {
+      if (!("showDirectoryPicker" in window)) {
+        $("#folderInput").click();
+        return;
+      }
+      const handle = await window.showDirectoryPicker({ id: "chapter-examples", mode: "read" });
+      await saveDirectoryHandle(handle);
+      await loadDirectory(handle);
+    }
+
+    async function restoreSavedDirectory() {
+      if (!("showDirectoryPicker" in window) || !("indexedDB" in window)) return;
+      try {
+        const handle = await getSavedDirectoryHandle();
+        if (handle && await handle.queryPermission({ mode: "read" }) === "granted") await loadDirectory(handle);
+      } catch (error) {
+        console.warn("无法恢复上次选择的目录", error);
+      }
+    }
+
+    function activeDay() { return state.days[state.dayIndex]; }
+    function activeChapter() { return activeDay()?.chapters[state.chapterIndex]; }
+    function offsetLabel(day = activeDay()) {
+      const offset = day?.__manifest?.filters?.offset_seconds;
+      return offset === null || offset === undefined ? "全部偏移组" : `偏移为${offset}组`;
+    }
+
+    function render() {
+      const day = activeDay();
+      if (!day) return;
+      if (!day.chapters[state.chapterIndex]) state.chapterIndex = 0;
+      const chapter = activeChapter();
+      const hero = chapter?.cover || day.chapters.find((item) => item.cover)?.cover;
+      $("#dayTitle").textContent = day.title || "未命名 Day";
+      $("#dayIntro").textContent = day.intro || "暂无简介。";
+      $("#chapterCount").textContent = day.chapters.length;
+      $("#imageCount").textContent = day.chapters.reduce((sum, item) => sum + item.images.length, 0);
+      const offset = day.__manifest?.filters?.offset_seconds;
+      $("#offsetValue").textContent = offset === null || offset === undefined ? "全部" : `${offset}s`;
+      $("#groupBadge").textContent = offsetLabel(day);
+      $("#dayHero").src = hero?.url || "";
+      $("#dayHero").alt = hero ? `${day.title}封面` : "";
+      $("#dayTabs").innerHTML = state.days.map((item, index) => `<button class="day-tab ${index === state.dayIndex ? "active" : ""}" type="button" data-day="${index}">${escapeHtml(item.title)}<small>${escapeHtml(offsetLabel(item))}</small></button>`).join("");
+      $("#route").innerHTML = day.chapters.map((item, index) => `<button class="route-item ${index === state.chapterIndex ? "active" : ""}" type="button" data-chapter="${index}"><img src="${item.cover?.url || item.images[0]?.url || ""}" alt=""><span><small>${String(index + 1).padStart(2, "0")} · ${escapeHtml(item.images[0]?.time_label || "时间未知")}</small><strong>${escapeHtml(item.title)}</strong><em>${item.images.length} 张画面</em></span></button>`).join("");
+      renderChapter();
+    }
+
+    function renderChapter() {
+      const chapter = activeChapter();
+      if (!chapter) {
+        $("#chapterHead").hidden = true;
+        $("#gallery").innerHTML = "";
+        return;
+      }
+      $("#chapterHead").hidden = false;
+      $("#sequence").textContent = `CHAPTER ${String(state.chapterIndex + 1).padStart(2, "0")} / ${offsetLabel()}`;
+      $("#chapterTitle").textContent = chapter.title || "未命名 Chapter";
+      $("#chapterIntro").textContent = chapter.intro || "暂无简介。";
+      $("#tags").innerHTML = (chapter.tags || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
+      $("#chapterCover").src = chapter.cover?.url || chapter.images[0]?.url || "";
+      $("#chapterCover").alt = `${chapter.title}封面`;
+      $("#coverLabel").textContent = `CHAPTER COVER · ${offsetLabel()}`;
+      $("#chapterImageCount").textContent = `${chapter.images.length} 张`;
+      $("#gallery").innerHTML = chapter.images.map((image, index) => `<figure class="image-entry"><button type="button" data-image="${index}" aria-label="查看第 ${index + 1} 张图片"><img src="${image.url}" alt="${escapeHtml(image.note || image.filename || "Chapter 图片")}"></button><figcaption><span class="index">${String(index + 1).padStart(2, "0")}</span><span><span class="time">${escapeHtml(image.time_label || "时间未知")}</span><p class="note">${escapeHtml(image.note || "暂无备注。")}</p></span></figcaption></figure>`).join("");
+      $("#missingWarning").hidden = !activeDay().__missing;
+      $("#missingWarning").textContent = activeDay().__missing ? `${activeDay().__packageName} 中有 ${activeDay().__missing} 张图片未找到，当前页面已显示其余内容。` : "";
+    }
+
+    function openImage(index) {
+      const chapter = activeChapter();
+      const image = chapter?.images[index];
+      if (!image) return;
+      $("#dialogImage").src = image.url;
+      $("#dialogImage").alt = image.note || image.filename || "Chapter 图片";
+      $("#dialogMeta").textContent = `${offsetLabel()} · ${image.time_label || "时间未知"}`;
+      $("#dialogTitle").textContent = chapter.title;
+      $("#dialogNote").textContent = image.note || "暂无备注。";
+      $("#imageDialog").showModal();
+    }
+
+    document.addEventListener("click", (event) => {
+      if (event.target.closest("[data-pick-folder]")) pickDirectory().catch((error) => { if (error.name !== "AbortError") showError(error.message); });
+      if (event.target.closest("[data-refresh]") && state.directoryHandle) loadDirectory(state.directoryHandle).catch((error) => showError(error.message));
+      const day = event.target.closest("[data-day]");
+      if (day) { state.dayIndex = Number(day.dataset.day); state.chapterIndex = 0; render(); }
+      const chapter = event.target.closest("[data-chapter]");
+      if (chapter) { state.chapterIndex = Number(chapter.dataset.chapter); render(); $("#chapterHead").scrollIntoView({ behavior: "smooth", block: "start" }); }
+      const image = event.target.closest("[data-image]");
+      if (image) openImage(Number(image.dataset.image));
+    });
+    $("#folderInput").addEventListener("change", async (event) => {
+      try { await loadFolder(event.target.files); }
+      catch (error) { showError(error.message); }
+      finally { event.target.value = ""; }
+    });
+    $("#dialogClose").addEventListener("click", () => $("#imageDialog").close());
+    $("#imageDialog").addEventListener("click", (event) => { if (event.target === $("#imageDialog")) $("#imageDialog").close(); });
+    restoreSavedDirectory();
+  </script>
+</body>
+</html>
