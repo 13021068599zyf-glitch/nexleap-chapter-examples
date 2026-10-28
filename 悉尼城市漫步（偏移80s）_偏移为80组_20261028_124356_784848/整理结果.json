@@ -1,0 +1,2443 @@
+{
+  "exported_at": "2026-10-28T12:43:56",
+  "image_root": "F:\\文件\\科研\\gptwork\\nexleap\\用户旅程模拟工作流\\03_旅行数据库\\视频素材\\抽帧图",
+  "filters": {
+    "day_id": 6,
+    "day_title": "悉尼城市漫步（偏移80s）",
+    "phase": 8,
+    "offset_seconds": 80
+  },
+  "exported_image_count": 97,
+  "days": [
+    {
+      "day_id": 6,
+      "title": "悉尼城市漫步（偏移80s）",
+      "intro": "从环形码头的歌剧院与海港大桥出发，穿过临港市集和市中心街巷，再走进海德公园与皇家植物园，最后沿海湾步道结束这段悉尼漫步。",
+      "position": 5,
+      "updated_at": "2026-10-28T10:40:15",
+      "import_key": null,
+      "chapter_count": 9,
+      "image_count": 97,
+      "chapter_ids": [
+        27,
+        35,
+        28,
+        29,
+        36,
+        30,
+        31,
+        32,
+        33
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "chapter_id": 27,
+      "title": "从 Sydney Opera House 开始海港漫步",
+      "intro": "从海港天际线望见歌剧院与海湾，沿临水平台向码头靠近。渡轮和海港景色交替出现，悉尼漫步就在这片开阔水岸间展开。",
+      "cover_image_id": 123825,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 1,
+      "tags": [
+        "activity.city_walk",
+        "subject.landmark",
+        "subject.architecture",
+        "subject.ocean_view",
+        "setting.waterside",
+        "setting.outdoors"
+      ],
+      "image_count": 7,
+      "covers": {
+        "8": {
+          "image_id": 123825,
+          "rel_path": "悉尼/phase_08_offset_080s/002_00-03-20_至_00-03-30/sydney__phase_08_offset_080s__sydney_000021_00-03-20__00-03-30__frame_00__abs_00-03-28.008.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 123825,
+          "rel_path": "悉尼/phase_08_offset_080s/002_00-03-20_至_00-03-30/sydney__phase_08_offset_080s__sydney_000021_00-03-20__00-03-30__frame_00__abs_00-03-28.008.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000021_00-03-20__00-03-30__frame_00__abs_00-03-28.008.jpg",
+          "time_label": "00:03:28.008",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着临水步道望向海湾，Sydney Opera House的白色帆形屋顶在远处显现，海港漫步由此展开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 4,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123826,
+          "rel_path": "悉尼/phase_08_offset_080s/003_00-05-20_至_00-05-30/sydney__phase_08_offset_080s__sydney_000033_00-05-20__00-05-30__frame_00__abs_00-05-22.002.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000033_00-05-20__00-05-30__frame_00__abs_00-05-22.002.jpg",
+          "time_label": "00:05:22.002",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "走近Sydney Opera House，白色帆形屋顶从近处铺展开来，阳光落在临海的台阶与外墙上。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 5,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123827,
+          "rel_path": "悉尼/phase_08_offset_080s/003_00-05-20_至_00-05-30/sydney__phase_08_offset_080s__sydney_000033_00-05-20__00-05-30__frame_01__abs_00-05-28.992.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000033_00-05-20__00-05-30__frame_01__abs_00-05-28.992.jpg",
+          "time_label": "00:05:28.992",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "穿过广场上的人流与廊柱，再次望见Sydney Opera House与开阔海面。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 6,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123829,
+          "rel_path": "悉尼/phase_08_offset_080s/004_00-07-20_至_00-07-30/sydney__phase_08_offset_080s__sydney_000045_00-07-20__00-07-30__frame_01__abs_00-07-26.006.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000045_00-07-20__00-07-30__frame_01__abs_00-07-26.006.jpg",
+          "time_label": "00:07:26.006",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "Sydney Harbour Bridge横跨蓝色海湾，船只从桥下驶过，连接起两岸的城市景色。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 8,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123837,
+          "rel_path": "悉尼/phase_08_offset_080s/009_00-17-20_至_00-17-30/sydney__phase_08_offset_080s__sydney_000105_00-17-20__00-17-30__frame_00__abs_00-17-23.003.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000105_00-17-20__00-17-30__frame_00__abs_00-17-23.003.jpg",
+          "time_label": "00:17:23.003",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿岸回望城市，高楼与海港并置，Circular Quay一带的水岸轮廓逐渐清晰。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 16,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123840,
+          "rel_path": "悉尼/phase_08_offset_080s/010_00-19-20_至_00-19-30/sydney__phase_08_offset_080s__sydney_000117_00-19-20__00-19-30__frame_01__abs_00-19-24.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000117_00-19-20__00-19-30__frame_01__abs_00-19-24.004.jpg",
+          "time_label": "00:19:24.004",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "海边绿树与石岸围出一处安静的步道，繁忙港景暂时退到身后。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 19,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.landscape",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123842,
+          "rel_path": "悉尼/phase_08_offset_080s/012_00-23-20_至_00-23-30/sydney__phase_08_offset_080s__sydney_000141_00-23-20__00-23-30__frame_00__abs_00-23-25.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000141_00-23-20__00-23-30__frame_00__abs_00-23-25.005.jpg",
+          "time_label": "00:23:25.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "棕榈树与临海餐馆把步道引向街区，海港漫步开始接近城市生活。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 21,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.tree",
+            "setting.waterside",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 7,
+      "cover_image_path": "悉尼/phase_08_offset_080s/002_00-03-20_至_00-03-30/sydney__phase_08_offset_080s__sydney_000021_00-03-20__00-03-30__frame_00__abs_00-03-28.008.jpg"
+    },
+    {
+      "chapter_id": 35,
+      "title": "沿 Circular Quay 走入城中",
+      "intro": "离开贴近海面的步道，经过咖啡座、广场与高楼脚下的街道。视野从海港逐渐转向城市街区，旅程由地标风景进入悉尼的日常街景。",
+      "cover_image_id": 123847,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 2,
+      "tags": [
+        "activity.city_walk",
+        "subject.architecture",
+        "subject.landmark",
+        "setting.city_street",
+        "setting.waterside",
+        "setting.outdoors"
+      ],
+      "image_count": 9,
+      "covers": {
+        "8": {
+          "image_id": 123847,
+          "rel_path": "悉尼/phase_08_offset_080s/017_00-33-20_至_00-33-30/sydney__phase_08_offset_080s__sydney_000201_00-33-20__00-33-30__frame_00__abs_00-33-26.006.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 123843,
+          "rel_path": "悉尼/phase_08_offset_080s/013_00-25-20_至_00-25-30/sydney__phase_08_offset_080s__sydney_000153_00-25-20__00-25-30__frame_00__abs_00-25-24.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000153_00-25-20__00-25-30__frame_00__abs_00-25-24.004.jpg",
+          "time_label": "00:25:24.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "高楼围合的广场人流渐密，旅程从海港边转入Circular Quay周边的城市街面。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 1,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123845,
+          "rel_path": "悉尼/phase_08_offset_080s/015_00-29-20_至_00-29-30/sydney__phase_08_offset_080s__sydney_000177_00-29-20__00-29-30__frame_00__abs_00-29-25.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000177_00-29-20__00-29-30__frame_00__abs_00-29-25.005.jpg",
+          "time_label": "00:29:25.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "渡轮停靠在Circular Quay码头，船尾的海面把视线带回Sydney Harbour。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 3,
+          "tags": [
+            "activity.city_walk",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123846,
+          "rel_path": "悉尼/phase_08_offset_080s/016_00-31-20_至_00-31-30/sydney__phase_08_offset_080s__sydney_000189_00-31-20__00-31-30__frame_00__abs_00-31-26.006.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000189_00-31-20__00-31-30__frame_00__abs_00-31-26.006.jpg",
+          "time_label": "00:31:26.006",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着码头步道前行，高楼临街而立，海湾与城市交通在身旁交汇。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 4,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.waterside",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123847,
+          "rel_path": "悉尼/phase_08_offset_080s/017_00-33-20_至_00-33-30/sydney__phase_08_offset_080s__sydney_000201_00-33-20__00-33-30__frame_00__abs_00-33-26.006.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000201_00-33-20__00-33-30__frame_00__abs_00-33-26.006.jpg",
+          "time_label": "00:33:26.006",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "广场上的绿色雕塑与周围老建筑相映，街头人流让城市空间有了鲜活的节奏。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 5,
+          "tags": [
+            "activity.city_walk",
+            "subject.artwork",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123850,
+          "rel_path": "悉尼/phase_08_offset_080s/019_00-37-20_至_00-37-30/sydney__phase_08_offset_080s__sydney_000225_00-37-20__00-37-30__frame_00__abs_00-37-21.001.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000225_00-37-20__00-37-30__frame_00__abs_00-37-21.001.jpg",
+          "time_label": "00:37:21.001",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "树荫、行人和宽阔的商业广场铺展在高楼脚下，步行路线继续深入市中心。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 8,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123851,
+          "rel_path": "悉尼/phase_08_offset_080s/019_00-37-20_至_00-37-30/sydney__phase_08_offset_080s__sydney_000225_00-37-20__00-37-30__frame_01__abs_00-37-27.007.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000225_00-37-20__00-37-30__frame_01__abs_00-37-27.007.jpg",
+          "time_label": "00:37:27.007",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "现代高楼从街区广场拔地而起，玻璃立面映着晴朗天空。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 9,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123852,
+          "rel_path": "悉尼/phase_08_offset_080s/020_00-39-20_至_00-39-30/sydney__phase_08_offset_080s__sydney_000237_00-39-20__00-39-30__frame_00__abs_00-39-25.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000237_00-39-20__00-39-30__frame_00__abs_00-39-25.005.jpg",
+          "time_label": "00:39:25.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "穿过高楼与街边绿树之间的人行道，悉尼CBD的日常街景渐次展开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 10,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123853,
+          "rel_path": "悉尼/phase_08_offset_080s/021_00-41-20_至_00-41-30/sydney__phase_08_offset_080s__sydney_000249_00-41-20__00-41-30__frame_00__abs_00-41-27.007.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000249_00-41-20__00-41-30__frame_00__abs_00-41-27.007.jpg",
+          "time_label": "00:41:27.007",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着遮阳棚下的窄巷经过露天座位，咖啡馆把街道的节奏放慢下来。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 11,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123854,
+          "rel_path": "悉尼/phase_08_offset_080s/022_00-43-20_至_00-43-30/sydney__phase_08_offset_080s__sydney_000261_00-43-20__00-43-30__frame_00__abs_00-43-21.001.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000261_00-43-20__00-43-30__frame_00__abs_00-43-21.001.jpg",
+          "time_label": "00:43:21.001",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "拱廊深处的店铺入口与阴凉通道，将视线从开阔广场引向城市街巷。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 12,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.indoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 9,
+      "cover_image_path": "悉尼/phase_08_offset_080s/017_00-33-20_至_00-33-30/sydney__phase_08_offset_080s__sydney_000201_00-33-20__00-33-30__frame_00__abs_00-33-26.006.jpg"
+    },
+    {
+      "chapter_id": 28,
+      "title": "走进 The Rocks 的老街与市集",
+      "intro": "人流汇入老街与棚下市集，摊位、露天餐桌和临街建筑连成一片。沿着热闹的街巷继续前行，市集生活与港口气息在这里交织。",
+      "cover_image_id": 123857,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 3,
+      "tags": [
+        "activity.city_walk",
+        "activity.cultural_exploration",
+        "subject.architecture",
+        "subject.landmark",
+        "setting.city_street",
+        "setting.outdoors"
+      ],
+      "image_count": 9,
+      "covers": {
+        "8": {
+          "image_id": 123857,
+          "rel_path": "悉尼/phase_08_offset_080s/023_00-45-20_至_00-45-30/sydney__phase_08_offset_080s__sydney_000273_00-45-20__00-45-30__frame_00__abs_00-45-21.001.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 123857,
+          "rel_path": "悉尼/phase_08_offset_080s/023_00-45-20_至_00-45-30/sydney__phase_08_offset_080s__sydney_000273_00-45-20__00-45-30__frame_00__abs_00-45-21.001.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000273_00-45-20__00-45-30__frame_00__abs_00-45-21.001.jpg",
+          "time_label": "00:45:21.001",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "The Rocks的砂岩历史街角立面与现代高楼并置，拱形店面和街边行人把老港区的日常带到眼前。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 10,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.architecture",
+            "subject.landmark",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123859,
+          "rel_path": "悉尼/phase_08_offset_080s/024_00-47-20_至_00-47-30/sydney__phase_08_offset_080s__sydney_000285_00-47-20__00-47-30__frame_00__abs_00-47-28.008.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000285_00-47-20__00-47-30__frame_00__abs_00-47-28.008.jpg",
+          "time_label": "00:47:28.008",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "树荫落在The Rocks的老街上，游客沿着店铺与路边座位缓缓穿行。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 12,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.architecture",
+            "subject.tree",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123862,
+          "rel_path": "悉尼/phase_08_offset_080s/026_00-51-20_至_00-51-30/sydney__phase_08_offset_080s__sydney_000309_00-51-20__00-51-30__frame_01__abs_00-51-27.007.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000309_00-51-20__00-51-30__frame_01__abs_00-51-27.007.jpg",
+          "time_label": "00:51:27.007",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "棚下摊位和往来的人群聚在一起，市集的热闹从街口延伸到街巷深处。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 15,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123863,
+          "rel_path": "悉尼/phase_08_offset_080s/027_00-53-20_至_00-53-30/sydney__phase_08_offset_080s__sydney_000321_00-53-20__00-53-30__frame_00__abs_00-53-22.002.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000321_00-53-20__00-53-30__frame_00__abs_00-53-22.002.jpg",
+          "time_label": "00:53:22.002",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "临街小店与露天餐桌排在遮阳棚下，The Rocks的市集生活近在眼前。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:36",
+          "position": 16,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123868,
+          "rel_path": "悉尼/phase_08_offset_080s/031_01-01-20_至_01-01-30/sydney__phase_08_offset_080s__sydney_000369_01-01-20__01-01-30__frame_00__abs_01-01-24.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000369_01-01-20__01-01-30__frame_00__abs_01-01-24.004.jpg",
+          "time_label": "01:01:24.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从开阔的滨水广场望向海面与现代建筑，城市街区再次贴近港湾。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 21,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123869,
+          "rel_path": "悉尼/phase_08_offset_080s/032_01-03-20_至_01-03-30/sydney__phase_08_offset_080s__sydney_000381_01-03-20__01-03-30__frame_00__abs_01-03-21.001.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000381_01-03-20__01-03-30__frame_00__abs_01-03-21.001.jpg",
+          "time_label": "01:03:21.001",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "低矮的临港建筑沿岸排开，树影和石墙围出一处安静的水边空间。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 22,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123871,
+          "rel_path": "悉尼/phase_08_offset_080s/032_01-03-20_至_01-03-30/sydney__phase_08_offset_080s__sydney_000381_01-03-20__01-03-30__frame_02__abs_01-03-28.992.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000381_01-03-20__01-03-30__frame_02__abs_01-03-28.992.jpg",
+          "time_label": "01:03:28.992",
+          "frame_index": 2,
+          "status": "未处理",
+          "note": "一艘木质高桅帆船停泊在港边，船身与索具保留着旧式航海的轮廓，远处高楼映出Darling Harbor的现代天际线。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 24,
+          "tags": [
+            "activity.city_walk",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123872,
+          "rel_path": "悉尼/phase_08_offset_080s/033_01-05-20_至_01-05-30/sydney__phase_08_offset_080s__sydney_000393_01-05-20__01-05-30__frame_00__abs_01-05-25.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000393_01-05-20__01-05-30__frame_00__abs_01-05-25.005.jpg",
+          "time_label": "01:05:25.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "隔着海湾望向悉尼高楼，海面把城市轮廓完整映入视野。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 25,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123875,
+          "rel_path": "悉尼/phase_08_offset_080s/034_01-07-20_至_01-07-30/sydney__phase_08_offset_080s__sydney_000405_01-07-20__01-07-30__frame_02__abs_01-07-28.008.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000405_01-07-20__01-07-30__frame_02__abs_01-07-28.008.jpg",
+          "time_label": "01:07:28.008",
+          "frame_index": 2,
+          "status": "未处理",
+          "note": "桥梁从滨水步道上方跨过，草坪、海面与远处的钢拱桥共同勾勒出港湾岸线。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 28,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 9,
+      "cover_image_path": "悉尼/phase_08_offset_080s/023_00-45-20_至_00-45-30/sydney__phase_08_offset_080s__sydney_000273_00-45-20__00-45-30__frame_00__abs_00-45-21.001.jpg"
+    },
+    {
+      "chapter_id": 29,
+      "title": "沿 Darling Harbor 漫步至滨水绿地",
+      "intro": "沿桥畔穿过街区与步行通道，途中经过树荫、草坪和临海小径。城市道路渐渐转为更开阔的岸边步道，海港景色重新映入眼前。",
+      "cover_image_id": 123888,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 4,
+      "tags": [
+        "activity.city_walk",
+        "subject.architecture",
+        "subject.landscape",
+        "subject.tree",
+        "setting.waterside",
+        "setting.yard_garden",
+        "setting.outdoors"
+      ],
+      "image_count": 11,
+      "covers": {
+        "8": {
+          "image_id": 123888,
+          "rel_path": "悉尼/phase_08_offset_080s/042_01-23-20_至_01-23-30/sydney__phase_08_offset_080s__sydney_000501_01-23-20__01-23-30__frame_00__abs_01-23-21.997.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 123879,
+          "rel_path": "悉尼/phase_08_offset_080s/036_01-11-20_至_01-11-30/sydney__phase_08_offset_080s__sydney_000429_01-11-20__01-11-30__frame_02__abs_01-11-28.992.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000429_01-11-20__01-11-30__frame_02__abs_01-11-28.992.jpg",
+          "time_label": "01:11:28.992",
+          "frame_index": 2,
+          "status": "未处理",
+          "note": "沿着绿意环绕的建筑边缘前行，城市步道开始向Darling Harbor的滨水空间过渡。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 3,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.plant",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123886,
+          "rel_path": "悉尼/phase_08_offset_080s/040_01-19-20_至_01-19-30/sydney__phase_08_offset_080s__sydney_000477_01-19-20__01-19-30__frame_01__abs_01-19-27.997.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000477_01-19-20__01-19-30__frame_01__abs_01-19-27.997.jpg",
+          "time_label": "01:19:27.997",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "穿过有顶的人行通道，行人从阴影中走向更明亮的街区与海湾。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 10,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123887,
+          "rel_path": "悉尼/phase_08_offset_080s/041_01-21-20_至_01-21-30/sydney__phase_08_offset_080s__sydney_000489_01-21-20__01-21-30__frame_00__abs_01-21-25.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000489_01-21-20__01-21-30__frame_00__abs_01-21-25.998.jpg",
+          "time_label": "01:21:25.998",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "旧式临街建筑沿着宽阔步道展开，海港街区的砖墙与水岸相接。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 11,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123888,
+          "rel_path": "悉尼/phase_08_offset_080s/042_01-23-20_至_01-23-30/sydney__phase_08_offset_080s__sydney_000501_01-23-20__01-23-30__frame_00__abs_01-23-21.997.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000501_01-23-20__01-23-30__frame_00__abs_01-23-21.997.jpg",
+          "time_label": "01:23:21.997",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着贴近水面的木栈道经过临港餐馆，停泊的小船在岸边轻轻晃动。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 12,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123890,
+          "rel_path": "悉尼/phase_08_offset_080s/043_01-25-20_至_01-25-30/sydney__phase_08_offset_080s__sydney_000513_01-25-20__01-25-30__frame_00__abs_01-25-20.999.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000513_01-25-20__01-25-30__frame_00__abs_01-25-20.999.jpg",
+          "time_label": "01:25:20.999",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "树木与低矮建筑围住一条安静的步行道，路线逐渐从街区转入滨水绿地。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 14,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.landscape",
+            "setting.outdoors",
+            "setting.yard_garden"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123894,
+          "rel_path": "悉尼/phase_08_offset_080s/045_01-29-20_至_01-29-30/sydney__phase_08_offset_080s__sydney_000537_01-29-20__01-29-30__frame_00__abs_01-29-24.993.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000537_01-29-20__01-29-30__frame_00__abs_01-29-24.993.jpg",
+          "time_label": "01:29:24.993",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着绿树成荫的长廊向前走，远处高楼从树梢间露出，城市与海湾渐渐靠近。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 18,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.landscape",
+            "setting.outdoors",
+            "setting.yard_garden"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123896,
+          "rel_path": "悉尼/phase_08_offset_080s/047_01-33-20_至_01-33-30/sydney__phase_08_offset_080s__sydney_000561_01-33-20__01-33-30__frame_00__abs_01-33-22.997.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000561_01-33-20__01-33-30__frame_00__abs_01-33-22.997.jpg",
+          "time_label": "01:33:22.997",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从浅滩回望岸边高楼，Darling Harbor的开阔水面与城市天际线相连。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 20,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123897,
+          "rel_path": "悉尼/phase_08_offset_080s/048_01-35-20_至_01-35-30/sydney__phase_08_offset_080s__sydney_000573_01-35-20__01-35-30__frame_00__abs_01-35-20.000.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000573_01-35-20__01-35-30__frame_00__abs_01-35-20.000.jpg",
+          "time_label": "01:35:20.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "小型栈桥伸向海面，岸边的建筑和树影倒映在平静的水中。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 21,
+          "tags": [
+            "activity.city_walk",
+            "subject.ocean_view",
+            "subject.landscape",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123899,
+          "rel_path": "悉尼/phase_08_offset_080s/049_01-37-20_至_01-37-30/sydney__phase_08_offset_080s__sydney_000585_01-37-20__01-37-30__frame_00__abs_01-37-23.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000585_01-37-20__01-37-30__frame_00__abs_01-37-23.004.jpg",
+          "time_label": "01:37:23.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着宽阔的滨海步道继续前行，海湾与远处的城区在视野中铺开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 23,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123901,
+          "rel_path": "悉尼/phase_08_offset_080s/050_01-39-20_至_01-39-30/sydney__phase_08_offset_080s__sydney_000597_01-39-20__01-39-30__frame_01__abs_01-39-24.992.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000597_01-39-20__01-39-30__frame_01__abs_01-39-24.992.jpg",
+          "time_label": "01:39:24.992",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "树荫下的水岸步道通向前方，行人沿着Darling Harbor边缘慢慢散步。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 25,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123904,
+          "rel_path": "悉尼/phase_08_offset_080s/053_01-45-20_至_01-45-30/sydney__phase_08_offset_080s__sydney_000633_01-45-20__01-45-30__frame_00__abs_01-45-23.000.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000633_01-45-20__01-45-30__frame_00__abs_01-45-23.000.jpg",
+          "time_label": "01:45:23.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "One Central Park层叠的悬挑阳台覆满垂直绿植，建筑立面像一座悬在街角的空中花园。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 28,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "subject.plant",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 11,
+      "cover_image_path": "悉尼/phase_08_offset_080s/042_01-23-20_至_01-23-30/sydney__phase_08_offset_080s__sydney_000501_01-23-20__01-23-30__frame_00__abs_01-23-21.997.jpg"
+    },
+    {
+      "chapter_id": 36,
+      "title": "在 Darling Harbor 码头看渡轮靠岸",
+      "intro": "路线回到水边，泊船、渡轮码头和临港广场依次展开。沿着栈桥和海湾步道前行，城市天际线映在水面，悉尼港的开阔景色再次成为旅程中心。",
+      "cover_image_id": 123915,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 5,
+      "tags": [
+        "activity.city_walk",
+        "activity.cultural_exploration",
+        "subject.museum",
+        "subject.landmark",
+        "subject.architecture",
+        "setting.waterside",
+        "setting.outdoors"
+      ],
+      "image_count": 13,
+      "covers": {
+        "8": {
+          "image_id": 123915,
+          "rel_path": "悉尼/phase_08_offset_080s/061_02-01-20_至_02-01-30/sydney__phase_08_offset_080s__sydney_000729_02-01-20__02-01-30__frame_00__abs_02-01-29.999.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 123909,
+          "rel_path": "悉尼/phase_08_offset_080s/057_01-53-20_至_01-53-30/sydney__phase_08_offset_080s__sydney_000681_01-53-20__01-53-30__frame_00__abs_01-53-21.995.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000681_01-53-20__01-53-30__frame_00__abs_01-53-21.995.jpg",
+          "time_label": "01:53:21.995",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从铺装广场穿过临港建筑，Darling Harbor的码头与公共空间逐渐展开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 2,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123911,
+          "rel_path": "悉尼/phase_08_offset_080s/058_01-55-20_至_01-55-30/sydney__phase_08_offset_080s__sydney_000693_01-55-20__01-55-30__frame_01__abs_01-55-24.000.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000693_01-55-20__01-55-30__frame_01__abs_01-55-24.000.jpg",
+          "time_label": "01:55:24.000",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "经过有地名指引的临港广场，游人沿着步道继续走向码头。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 4,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123913,
+          "rel_path": "悉尼/phase_08_offset_080s/059_01-57-20_至_01-57-30/sydney__phase_08_offset_080s__sydney_000705_01-57-20__01-57-30__frame_00__abs_01-57-26.006.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000705_01-57-20__01-57-30__frame_00__abs_01-57-26.006.jpg",
+          "time_label": "01:57:26.006",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "几艘渡轮并排停泊在码头边，城市高楼倒映在深蓝色的港湾里。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 6,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123915,
+          "rel_path": "悉尼/phase_08_offset_080s/061_02-01-20_至_02-01-30/sydney__phase_08_offset_080s__sydney_000729_02-01-20__02-01-30__frame_00__abs_02-01-29.999.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000729_02-01-20__02-01-30__frame_00__abs_02-01-29.999.jpg",
+          "time_label": "02:01:29.999",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从栏杆边望向渡轮与对岸高楼，码头成为海港与城市之间的停留点。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 8,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123917,
+          "rel_path": "悉尼/phase_08_offset_080s/063_02-05-20_至_02-05-30/sydney__phase_08_offset_080s__sydney_000753_02-05-20__02-05-30__frame_00__abs_02-05-27.003.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000753_02-05-20__02-05-30__frame_00__abs_02-05-27.003.jpg",
+          "time_label": "02:05:27.003",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "红色铺地广场连接着旧式港边建筑，海风把步伐带向下一处码头。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 10,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123918,
+          "rel_path": "悉尼/phase_08_offset_080s/064_02-07-20_至_02-07-30/sydney__phase_08_offset_080s__sydney_000765_02-07-20__02-07-30__frame_00__abs_02-07-25.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000765_02-07-20__02-07-30__frame_00__abs_02-07-25.004.jpg",
+          "time_label": "02:07:25.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "一组彩色圆柱装置立在滨水广场，成为码头步行途中醒目的街头艺术。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 11,
+          "tags": [
+            "activity.city_walk",
+            "subject.artwork",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123919,
+          "rel_path": "悉尼/phase_08_offset_080s/065_02-09-20_至_02-09-30/sydney__phase_08_offset_080s__sydney_000777_02-09-20__02-09-30__frame_00__abs_02-09-22.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000777_02-09-20__02-09-30__frame_00__abs_02-09-22.004.jpg",
+          "time_label": "02:09:22.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿岸回望Darling Harbor，停泊的船只与密集的城市高楼共同映在海面上。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 12,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123920,
+          "rel_path": "悉尼/phase_08_offset_080s/065_02-09-20_至_02-09-30/sydney__phase_08_offset_080s__sydney_000777_02-09-20__02-09-30__frame_01__abs_02-09-26.993.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000777_02-09-20__02-09-30__frame_01__abs_02-09-26.993.jpg",
+          "time_label": "02:09:26.993",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "Australian National Maritime Museum的白色帆形展馆立在码头边，船桅与海湾把悉尼的海事记忆带到眼前。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 13,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.museum",
+            "subject.landmark",
+            "subject.architecture",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123922,
+          "rel_path": "悉尼/phase_08_offset_080s/066_02-11-20_至_02-11-30/sydney__phase_08_offset_080s__sydney_000789_02-11-20__02-11-30__frame_01__abs_02-11-29.999.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000789_02-11-20__02-11-30__frame_01__abs_02-11-29.999.jpg",
+          "time_label": "02:11:29.999",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "老式帆船停在港湾一侧，桅杆与索具勾勒出不同于现代渡轮的海港记忆。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 15,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123925,
+          "rel_path": "悉尼/phase_08_offset_080s/068_02-15-20_至_02-15-30/sydney__phase_08_offset_080s__sydney_000813_02-15-20__02-15-30__frame_00__abs_02-15-20.996.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000813_02-15-20__02-15-30__frame_00__abs_02-15-20.996.jpg",
+          "time_label": "02:15:20.996",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "走上浮动码头靠近白色渡轮，候船区把步道直接引向海面。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 18,
+          "tags": [
+            "activity.city_walk",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123927,
+          "rel_path": "悉尼/phase_08_offset_080s/069_02-17-20_至_02-17-30/sydney__phase_08_offset_080s__sydney_000825_02-17-20__02-17-30__frame_00__abs_02-17-27.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000825_02-17-20__02-17-30__frame_00__abs_02-17-27.005.jpg",
+          "time_label": "02:17:27.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "临港广场边的遮棚、船桅与施工吊臂交错，记录下码头不断变化的城市一面。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 20,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.construction_site",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123929,
+          "rel_path": "悉尼/phase_08_offset_080s/070_02-19-20_至_02-19-30/sydney__phase_08_offset_080s__sydney_000837_02-19-20__02-19-30__frame_00__abs_02-19-22.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000837_02-19-20__02-19-30__frame_00__abs_02-19-22.004.jpg",
+          "time_label": "02:19:22.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从弯曲的岸线望向Darling Harbor，对岸的白色建筑和停泊船只映在港湾之间。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 22,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123933,
+          "rel_path": "悉尼/phase_08_offset_080s/074_02-27-20_至_02-27-30/sydney__phase_08_offset_080s__sydney_000885_02-27-20__02-27-30__frame_00__abs_02-27-24.002.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000885_02-27-20__02-27-30__frame_00__abs_02-27-24.002.jpg",
+          "time_label": "02:27:24.002",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "树荫下有人停留休息，水边的小亭和绿地为长段码头步行留出一处歇脚点。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 26,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 13,
+      "cover_image_path": "悉尼/phase_08_offset_080s/061_02-01-20_至_02-01-30/sydney__phase_08_offset_080s__sydney_000729_02-01-20__02-01-30__frame_00__abs_02-01-29.999.jpg"
+    },
+    {
+      "chapter_id": 30,
+      "title": "穿行 Sydney CBD 与 Chinatown 街巷",
+      "intro": "从水岸走进市中心，电车、商店橱窗和拱廊沿街展开。高楼与旧式街面并置，人流穿梭其间，旅程也从海港风景转入城市节奏。",
+      "cover_image_id": 123962,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 6,
+      "tags": [
+        "activity.city_walk",
+        "activity.cultural_exploration",
+        "subject.architecture",
+        "subject.landmark",
+        "setting.city_street",
+        "setting.indoors",
+        "setting.outdoors"
+      ],
+      "image_count": 15,
+      "covers": {
+        "8": {
+          "image_id": 123962,
+          "rel_path": "悉尼/phase_08_offset_080s/097_03-13-20_至_03-13-30/sydney__phase_08_offset_080s__sydney_001161_03-13-20__03-13-30__frame_00__abs_03-13-23.008.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 123939,
+          "rel_path": "悉尼/phase_08_offset_080s/079_02-37-20_至_02-37-30/sydney__phase_08_offset_080s__sydney_000945_02-37-20__02-37-30__frame_00__abs_02-37-20.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000945_02-37-20__02-37-30__frame_00__abs_02-37-20.998.jpg",
+          "time_label": "02:37:20.998",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着绿树遮蔽的街道经过街边餐馆，行人和露台座位让CBD街巷显得热闹而亲切。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 4,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.tree",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123942,
+          "rel_path": "悉尼/phase_08_offset_080s/081_02-41-20_至_02-41-30/sydney__phase_08_offset_080s__sydney_000969_02-41-20__02-41-30__frame_00__abs_02-41-20.000.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000969_02-41-20__02-41-30__frame_00__abs_02-41-20.000.jpg",
+          "time_label": "02:41:20.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "店铺里整齐陈列着各式商品，街头漫步从建筑外观转入悉尼的日常商业空间。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 7,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.indoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123943,
+          "rel_path": "悉尼/phase_08_offset_080s/082_02-43-20_至_02-43-30/sydney__phase_08_offset_080s__sydney_000981_02-43-20__02-43-30__frame_00__abs_02-43-22.009.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_000981_02-43-20__02-43-30__frame_00__abs_02-43-22.009.jpg",
+          "time_label": "02:43:22.009",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "一排排新鲜水果铺满摊位，市井气息在繁忙的城市街道间展开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 8,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.indoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123946,
+          "rel_path": "悉尼/phase_08_offset_080s/084_02-47-20_至_02-47-30/sydney__phase_08_offset_080s__sydney_001005_02-47-20__02-47-30__frame_00__abs_02-47-23.000.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001005_02-47-20__02-47-30__frame_00__abs_02-47-23.000.jpg",
+          "time_label": "02:47:23.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "路口施工与红砖建筑并列，城市道路更新的现场融入CBD日常街景。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 11,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.construction_site",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123950,
+          "rel_path": "悉尼/phase_08_offset_080s/086_02-51-20_至_02-51-30/sydney__phase_08_offset_080s__sydney_001029_02-51-20__02-51-30__frame_00__abs_02-51-25.992.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001029_02-51-20__02-51-30__frame_00__abs_02-51-25.992.jpg",
+          "time_label": "02:51:25.992",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着高楼夹出的街道向前走，玻璃幕墙与街边店铺呈现出CBD的纵深。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 15,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123952,
+          "rel_path": "悉尼/phase_08_offset_080s/088_02-55-20_至_02-55-30/sydney__phase_08_offset_080s__sydney_001053_02-55-20__02-55-30__frame_00__abs_02-55-24.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001053_02-55-20__02-55-30__frame_00__abs_02-55-24.998.jpg",
+          "time_label": "02:55:24.998",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "红砖与浅色石材交织成哥特复兴式立面，尖拱窗和细部雕饰为CBD街景留下历史层次。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 17,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123954,
+          "rel_path": "悉尼/phase_08_offset_080s/090_02-59-20_至_02-59-30/sydney__phase_08_offset_080s__sydney_001077_02-59-20__02-59-30__frame_00__abs_02-59-22.001.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001077_02-59-20__02-59-30__frame_00__abs_02-59-22.001.jpg",
+          "time_label": "02:59:22.001",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "彩绘中文字招牌横跨店面，唐人街的商业街巷气息格外鲜明。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 19,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.artwork",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123957,
+          "rel_path": "悉尼/phase_08_offset_080s/093_03-05-20_至_03-05-30/sydney__phase_08_offset_080s__sydney_001113_03-05-20__03-05-30__frame_00__abs_03-05-23.996.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001113_03-05-20__03-05-30__frame_00__abs_03-05-23.996.jpg",
+          "time_label": "03:05:23.996",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "走进古老教堂空间，石砌尖拱门、木质回廊和彩绘玻璃把街头喧闹隔在门外。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 22,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.architecture",
+            "subject.landmark",
+            "setting.indoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123959,
+          "rel_path": "悉尼/phase_08_offset_080s/094_03-07-20_至_03-07-30/sydney__phase_08_offset_080s__sydney_001125_03-07-20__03-07-30__frame_00__abs_03-07-22.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001125_03-07-20__03-07-30__frame_00__abs_03-07-22.998.jpg",
+          "time_label": "03:07:22.998",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "树木围绕着一处安静的步行空间，市中心的绿荫与周边街道只隔几步。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 24,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123962,
+          "rel_path": "悉尼/phase_08_offset_080s/097_03-13-20_至_03-13-30/sydney__phase_08_offset_080s__sydney_001161_03-13-20__03-13-30__frame_00__abs_03-13-23.008.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001161_03-13-20__03-13-30__frame_00__abs_03-13-23.008.jpg",
+          "time_label": "03:13:23.008",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "穿过多层拱廊与装饰栏杆，室内中庭的采光和店铺人流展现了悉尼历史商业建筑的另一面。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 27,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.indoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123965,
+          "rel_path": "悉尼/phase_08_offset_080s/100_03-19-20_至_03-19-30/sydney__phase_08_offset_080s__sydney_001197_03-19-20__03-19-30__frame_00__abs_03-19-24.002.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001197_03-19-20__03-19-30__frame_00__abs_03-19-24.002.jpg",
+          "time_label": "03:19:24.002",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着挂满招牌的商业街前行，店铺和人流把唐人街的街市氛围推到眼前。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 30,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123972,
+          "rel_path": "悉尼/phase_08_offset_080s/104_03-27-20_至_03-27-30/sydney__phase_08_offset_080s__sydney_001245_03-27-20__03-27-30__frame_01__abs_03-27-29.988.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001245_03-27-20__03-27-30__frame_01__abs_03-27-29.988.jpg",
+          "time_label": "03:27:29.988",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "街角的浅色历史建筑与现代道路并置，城市街巷在转弯处显出不同年代的层次。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 37,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123974,
+          "rel_path": "悉尼/phase_08_offset_080s/106_03-31-20_至_03-31-30/sydney__phase_08_offset_080s__sydney_001269_03-31-20__03-31-30__frame_00__abs_03-31-24.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001269_03-31-20__03-31-30__frame_00__abs_03-31-24.005.jpg",
+          "time_label": "03:31:24.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着树荫和拱廊之间的人行道继续前行，街区逐渐靠近公园一带。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 39,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123976,
+          "rel_path": "悉尼/phase_08_offset_080s/108_03-35-20_至_03-35-30/sydney__phase_08_offset_080s__sydney_001293_03-35-20__03-35-30__frame_00__abs_03-35-21.992.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001293_03-35-20__03-35-30__frame_00__abs_03-35-21.992.jpg",
+          "time_label": "03:35:21.992",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "商店遮棚下行人来往不断，城市步行路线仍沿着热闹的商业街延伸。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 41,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123981,
+          "rel_path": "悉尼/phase_08_offset_080s/112_03-43-20_至_03-43-30/sydney__phase_08_offset_080s__sydney_001341_03-43-20__03-43-30__frame_00__abs_03-43-26.994.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001341_03-43-20__03-43-30__frame_00__abs_03-43-26.994.jpg",
+          "time_label": "03:43:26.994",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "红砖教堂式建筑的高塔与拱形窗映在阳光下，厚重的历史立面从街道边拔地而起。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 46,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 15,
+      "cover_image_path": "悉尼/phase_08_offset_080s/097_03-13-20_至_03-13-30/sydney__phase_08_offset_080s__sydney_001161_03-13-20__03-13-30__frame_00__abs_03-13-23.008.jpg"
+    },
+    {
+      "chapter_id": 31,
+      "title": "走进 Hyde Park 放慢脚步",
+      "intro": "离开繁忙街道后，树荫、草坪与喷泉逐渐铺开，周边的历史建筑在绿地间显露。脚步放慢下来，城市中心也多了一段安静的停留。",
+      "cover_image_id": 123993,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 7,
+      "tags": [
+        "activity.city_walk",
+        "subject.architecture",
+        "subject.landmark",
+        "subject.artwork",
+        "subject.tree",
+        "setting.yard_garden",
+        "setting.outdoors"
+      ],
+      "image_count": 12,
+      "covers": {
+        "8": {
+          "image_id": 123993,
+          "rel_path": "悉尼/phase_08_offset_080s/121_04-01-20_至_04-01-30/sydney__phase_08_offset_080s__sydney_001449_04-01-20__04-01-30__frame_00__abs_04-01-26.005.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 123982,
+          "rel_path": "悉尼/phase_08_offset_080s/113_03-45-20_至_03-45-30/sydney__phase_08_offset_080s__sydney_001353_03-45-20__03-45-30__frame_00__abs_03-45-22.993.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001353_03-45-20__03-45-30__frame_00__abs_03-45-22.993.jpg",
+          "time_label": "03:45:22.993",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从建筑内部的玻璃门边望向街道，离开室内空间后继续走向Hyde Park。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 1,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.indoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123984,
+          "rel_path": "悉尼/phase_08_offset_080s/113_03-45-20_至_03-45-30/sydney__phase_08_offset_080s__sydney_001353_03-45-20__03-45-30__frame_02__abs_03-45-27.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001353_03-45-20__03-45-30__frame_02__abs_03-45-27.998.jpg",
+          "time_label": "03:45:27.998",
+          "frame_index": 2,
+          "status": "未处理",
+          "note": "穿过有顶的通道看见街边高楼，繁忙街区与公园入口之间只剩一段短短的步行路。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 3,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123985,
+          "rel_path": "悉尼/phase_08_offset_080s/114_03-47-20_至_03-47-30/sydney__phase_08_offset_080s__sydney_001365_03-47-20__03-47-30__frame_00__abs_03-47-20.000.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001365_03-47-20__03-47-30__frame_00__abs_03-47-20.000.jpg",
+          "time_label": "03:47:20.000",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "在街口等候穿行，车流与行人交错，城市街景渐渐让位给前方的绿地。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 4,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123987,
+          "rel_path": "悉尼/phase_08_offset_080s/115_03-49-20_至_03-49-30/sydney__phase_08_offset_080s__sydney_001377_03-49-20__03-49-30__frame_00__abs_03-49-22.999.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001377_03-49-20__03-49-30__frame_00__abs_03-49-22.999.jpg",
+          "time_label": "03:49:22.999",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "越过草坪望见公园边的历史建筑，Hyde Park的开阔绿地在城市中心展开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 6,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123993,
+          "rel_path": "悉尼/phase_08_offset_080s/121_04-01-20_至_04-01-30/sydney__phase_08_offset_080s__sydney_001449_04-01-20__04-01-30__frame_00__abs_04-01-26.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001449_04-01-20__04-01-30__frame_00__abs_04-01-26.005.jpg",
+          "time_label": "04:01:26.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "Captain Cook纪念像立在Hyde Park草坪中央，铜像举起望远镜、指向海面，周围树木与城市高楼形成对照。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 12,
+          "tags": [
+            "activity.city_walk",
+            "subject.artwork",
+            "subject.landmark",
+            "subject.tree",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123996,
+          "rel_path": "悉尼/phase_08_offset_080s/123_04-05-20_至_04-05-30/sydney__phase_08_offset_080s__sydney_001473_04-05-20__04-05-30__frame_00__abs_04-05-21.006.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001473_04-05-20__04-05-30__frame_00__abs_04-05-21.006.jpg",
+          "time_label": "04:05:21.006",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着花坛旁的直线路径走入绿荫深处，行人把步速放慢下来。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 15,
+          "tags": [
+            "activity.city_walk",
+            "subject.flower",
+            "subject.tree",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 123998,
+          "rel_path": "悉尼/phase_08_offset_080s/124_04-07-20_至_04-07-30/sydney__phase_08_offset_080s__sydney_001485_04-07-20__04-07-30__frame_00__abs_04-07-25.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001485_04-07-20__04-07-30__frame_00__abs_04-07-25.998.jpg",
+          "time_label": "04:07:25.998",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "宽阔的草坪与成排树木铺展在公园里，城市声响退到树荫之外。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 17,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124000,
+          "rel_path": "悉尼/phase_08_offset_080s/126_04-11-20_至_04-11-30/sydney__phase_08_offset_080s__sydney_001509_04-11-20__04-11-30__frame_00__abs_04-11-26.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001509_04-11-20__04-11-30__frame_00__abs_04-11-26.004.jpg",
+          "time_label": "04:11:26.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "Hyde Park Barracks的红砖正立面与三角山墙清晰可见，山墙上的钟和“L. Macquarie”铭文记录着这座殖民时期建筑的历史。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 19,
+          "tags": [
+            "activity.city_walk",
+            "activity.cultural_exploration",
+            "subject.architecture",
+            "subject.landmark",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124001,
+          "rel_path": "悉尼/phase_08_offset_080s/127_04-13-20_至_04-13-30/sydney__phase_08_offset_080s__sydney_001521_04-13-20__04-13-30__frame_00__abs_04-13-24.990.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001521_04-13-20__04-13-30__frame_00__abs_04-13-24.990.jpg",
+          "time_label": "04:13:24.990",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着长廊式建筑外侧经过拱廊，行人和石砌立面共同构成公园边缘的街景。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 20,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124005,
+          "rel_path": "悉尼/phase_08_offset_080s/131_04-21-20_至_04-21-30/sydney__phase_08_offset_080s__sydney_001569_04-21-20__04-21-30__frame_00__abs_04-21-20.999.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001569_04-21-20__04-21-30__frame_00__abs_04-21-20.999.jpg",
+          "time_label": "04:21:20.999",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "草坪、步道与周围建筑相连，Hyde Park的绿地向城市街区敞开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 24,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124006,
+          "rel_path": "悉尼/phase_08_offset_080s/131_04-21-20_至_04-21-30/sydney__phase_08_offset_080s__sydney_001569_04-21-20__04-21-30__frame_01__abs_04-21-24.002.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001569_04-21-20__04-21-30__frame_01__abs_04-21-24.002.jpg",
+          "time_label": "04:21:24.002",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "F. J. Walker Memorial Fountain的水柱从浅碗中涌起，旁侧砂岩人物以Earth、Water与Fire为主题，草坪环绕着这组纪念性雕塑。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 25,
+          "tags": [
+            "activity.city_walk",
+            "subject.artwork",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124008,
+          "rel_path": "悉尼/phase_08_offset_080s/132_04-23-20_至_04-23-30/sydney__phase_08_offset_080s__sydney_001581_04-23-20__04-23-30__frame_00__abs_04-23-23.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001581_04-23-20__04-23-30__frame_00__abs_04-23-23.004.jpg",
+          "time_label": "04:23:23.004",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "树丛间露出高楼与雕塑景观，公园绿意和CBD天际线在此相遇。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 27,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.tree",
+            "setting.city_street",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 12,
+      "cover_image_path": "悉尼/phase_08_offset_080s/121_04-01-20_至_04-01-30/sydney__phase_08_offset_080s__sydney_001449_04-01-20__04-01-30__frame_00__abs_04-01-26.005.jpg"
+    },
+    {
+      "chapter_id": 32,
+      "title": "沿 Botanical Gardens 林荫道前行",
+      "intro": "沿林荫小径继续向海湾方向走，花木、草坪、水池与凉亭接连出现。城市高楼不时穿过枝叶映入眼帘，繁忙街区渐渐退到身后。",
+      "cover_image_id": 124010,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 8,
+      "tags": [
+        "activity.city_walk",
+        "subject.plant",
+        "subject.flower",
+        "subject.tree",
+        "subject.landscape",
+        "setting.yard_garden",
+        "setting.outdoors"
+      ],
+      "image_count": 16,
+      "covers": {
+        "8": {
+          "image_id": 124010,
+          "rel_path": "悉尼/phase_08_offset_080s/133_04-25-20_至_04-25-30/sydney__phase_08_offset_080s__sydney_001593_04-25-20__04-25-30__frame_00__abs_04-25-23.007.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 124010,
+          "rel_path": "悉尼/phase_08_offset_080s/133_04-25-20_至_04-25-30/sydney__phase_08_offset_080s__sydney_001593_04-25-20__04-25-30__frame_00__abs_04-25-23.007.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001593_04-25-20__04-25-30__frame_00__abs_04-25-23.007.jpg",
+          "time_label": "04:25:23.007",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "水池与环形花坛映着周围高楼，皇家植物园的园林景致从城市天际线间展开。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 1,
+          "tags": [
+            "activity.city_walk",
+            "subject.landscape",
+            "subject.flower",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124013,
+          "rel_path": "悉尼/phase_08_offset_080s/134_04-27-20_至_04-27-30/sydney__phase_08_offset_080s__sydney_001605_04-27-20__04-27-30__frame_01__abs_04-27-27.999.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001605_04-27-20__04-27-30__frame_01__abs_04-27-27.999.jpg",
+          "time_label": "04:27:27.999",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "沿着修剪整齐的绿篱步道前行，远处高楼仍提醒着人们城市就在园林之外。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:37",
+          "position": 4,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124016,
+          "rel_path": "悉尼/phase_08_offset_080s/137_04-33-20_至_04-33-30/sydney__phase_08_offset_080s__sydney_001641_04-33-20__04-33-30__frame_00__abs_04-33-25.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001641_04-33-20__04-33-30__frame_00__abs_04-33-25.005.jpg",
+          "time_label": "04:33:25.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "一颗光滑的球形雕塑安放在小径旁，与后方凉亭、长椅和修整整齐的花园水岸相映。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 7,
+          "tags": [
+            "activity.city_walk",
+            "subject.artwork",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124019,
+          "rel_path": "悉尼/phase_08_offset_080s/138_04-35-20_至_04-35-30/sydney__phase_08_offset_080s__sydney_001653_04-35-20__04-35-30__frame_02__abs_04-35-28.996.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001653_04-35-20__04-35-30__frame_02__abs_04-35-28.996.jpg",
+          "time_label": "04:35:28.996",
+          "frame_index": 2,
+          "status": "未处理",
+          "note": "花丛间立着彩色金属昆虫造型装置，周围的野花、草地和树影构成一处轻松明快的园林展示角落。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 10,
+          "tags": [
+            "activity.city_walk",
+            "subject.artwork",
+            "subject.flower",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124020,
+          "rel_path": "悉尼/phase_08_offset_080s/139_04-37-20_至_04-37-30/sydney__phase_08_offset_080s__sydney_001665_04-37-20__04-37-30__frame_00__abs_04-37-23.994.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001665_04-37-20__04-37-30__frame_00__abs_04-37-23.994.jpg",
+          "time_label": "04:37:23.994",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "走入Royal Botanic Garden的Palm Grove，不同叶形的棕榈沿小径层层围合，扇叶与羽状叶在头顶交错成荫。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 11,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124023,
+          "rel_path": "悉尼/phase_08_offset_080s/142_04-43-20_至_04-43-30/sydney__phase_08_offset_080s__sydney_001701_04-43-20__04-43-30__frame_00__abs_04-43-25.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001701_04-43-20__04-43-30__frame_00__abs_04-43-25.005.jpg",
+          "time_label": "04:43:25.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着花木环绕的园路继续前行，层层绿意把视线引向花园深处。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 14,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.plant",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124025,
+          "rel_path": "悉尼/phase_08_offset_080s/143_04-45-20_至_04-45-30/sydney__phase_08_offset_080s__sydney_001713_04-45-20__04-45-30__frame_01__abs_04-45-28.995.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001713_04-45-20__04-45-30__frame_01__abs_04-45-28.995.jpg",
+          "time_label": "04:45:28.995",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "在Succulent Garden里，芦荟与龙舌兰类多肉舒展出剑形叶片，耐旱植物的雕塑感与远处城市高楼形成对照。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 16,
+          "tags": [
+            "activity.city_walk",
+            "subject.plant",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124029,
+          "rel_path": "悉尼/phase_08_offset_080s/146_04-51-20_至_04-51-30/sydney__phase_08_offset_080s__sydney_001749_04-51-20__04-51-30__frame_00__abs_04-51-21.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001749_04-51-20__04-51-30__frame_00__abs_04-51-21.998.jpg",
+          "time_label": "04:51:21.998",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "圆形花坛与远处的城市高楼同框，园林绿意和都市景观彼此映衬。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 20,
+          "tags": [
+            "activity.city_walk",
+            "subject.flower",
+            "subject.tree",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124030,
+          "rel_path": "悉尼/phase_08_offset_080s/146_04-51-20_至_04-51-30/sydney__phase_08_offset_080s__sydney_001749_04-51-20__04-51-30__frame_01__abs_04-51-27.003.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001749_04-51-20__04-51-30__frame_01__abs_04-51-27.003.jpg",
+          "time_label": "04:51:27.003",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "穿过石砌门洞进入更幽静的园区，入口两侧的树木把路径围合起来。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 21,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.tree",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124031,
+          "rel_path": "悉尼/phase_08_offset_080s/147_04-53-20_至_04-53-30/sydney__phase_08_offset_080s__sydney_001761_04-53-20__04-53-30__frame_00__abs_04-53-24.003.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001761_04-53-20__04-53-30__frame_00__abs_04-53-24.003.jpg",
+          "time_label": "04:53:24.003",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "The Calyx的玻璃展馆与绿色立面隐现在树丛和水池后，室内植物展示与园中步道在此相接。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 22,
+          "tags": [
+            "activity.city_walk",
+            "subject.architecture",
+            "subject.landmark",
+            "subject.plant",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124032,
+          "rel_path": "悉尼/phase_08_offset_080s/147_04-53-20_至_04-53-30/sydney__phase_08_offset_080s__sydney_001761_04-53-20__04-53-30__frame_01__abs_04-53-29.008.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001761_04-53-20__04-53-30__frame_01__abs_04-53-29.008.jpg",
+          "time_label": "04:53:29.008",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "繁茂灌木与树荫围出一处层次丰富的花园角落，近处枝叶与远处路径相互交叠。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 23,
+          "tags": [
+            "activity.city_walk",
+            "subject.plant",
+            "subject.tree",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124036,
+          "rel_path": "悉尼/phase_08_offset_080s/149_04-57-20_至_04-57-30/sydney__phase_08_offset_080s__sydney_001785_04-57-20__04-57-30__frame_00__abs_04-57-23.993.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001785_04-57-20__04-57-30__frame_00__abs_04-57-23.993.jpg",
+          "time_label": "04:57:23.993",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着主池的弧形岸线慢行，修剪草坪、层层伸展的高大针叶树与远处水面构成开阔园景。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 27,
+          "tags": [
+            "activity.city_walk",
+            "subject.lake_view",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124037,
+          "rel_path": "悉尼/phase_08_offset_080s/149_04-57-20_至_04-57-30/sydney__phase_08_offset_080s__sydney_001785_04-57-20__04-57-30__frame_01__abs_04-57-28.998.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001785_04-57-20__04-57-30__frame_01__abs_04-57-28.998.jpg",
+          "time_label": "04:57:28.998",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "草坪边的纪念柱顶端立着小型雕像，周围花坛、棕榈和高大针叶树把视线引向海港。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 28,
+          "tags": [
+            "activity.city_walk",
+            "subject.artwork",
+            "subject.landmark",
+            "subject.flower",
+            "subject.tree",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124040,
+          "rel_path": "悉尼/phase_08_offset_080s/151_05-01-20_至_05-01-30/sydney__phase_08_offset_080s__sydney_001809_05-01-20__05-01-30__frame_01__abs_05-01-29.004.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001809_05-01-20__05-01-30__frame_01__abs_05-01-29.004.jpg",
+          "time_label": "05:01:29.004",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "精心修整的花坛沿着水边铺开，园林线条与远处海天相接。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 31,
+          "tags": [
+            "activity.city_walk",
+            "subject.flower",
+            "subject.plant",
+            "subject.ocean_view",
+            "setting.yard_garden",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124041,
+          "rel_path": "悉尼/phase_08_offset_080s/152_05-03-20_至_05-03-30/sydney__phase_08_offset_080s__sydney_001821_05-03-20__05-03-30__frame_00__abs_05-03-27.005.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001821_05-03-20__05-03-30__frame_00__abs_05-03-27.005.jpg",
+          "time_label": "05:03:27.005",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "浓密树冠下是一片安静草地，行程在植物园的绿荫间放缓。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 32,
+          "tags": [
+            "activity.city_walk",
+            "subject.tree",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124042,
+          "rel_path": "悉尼/phase_08_offset_080s/153_05-05-20_至_05-05-30/sydney__phase_08_offset_080s__sydney_001833_05-05-20__05-05-30__frame_00__abs_05-05-25.991.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001833_05-05-20__05-05-30__frame_00__abs_05-05-25.991.jpg",
+          "time_label": "05:05:25.991",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着临水步道走向开阔草坪，海湾边的植物园漫步接近尾声。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 33,
+          "tags": [
+            "activity.city_walk",
+            "subject.ocean_view",
+            "subject.landscape",
+            "setting.yard_garden",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 16,
+      "cover_image_path": "悉尼/phase_08_offset_080s/133_04-25-20_至_04-25-30/sydney__phase_08_offset_080s__sydney_001593_04-25-20__04-25-30__frame_00__abs_04-25-23.007.jpg"
+    },
+    {
+      "chapter_id": 33,
+      "title": "沿 Circular Quay 重返 Sydney Opera House",
+      "intro": "行程回到临海步道，海面、岸线与城市景色陪伴最后一段路。放慢脚步走向旅程终点，为这趟悉尼城市漫步留下开阔的收尾。",
+      "cover_image_id": 124050,
+      "updated_at": "2026-10-28T12:42:38",
+      "day_id": 6,
+      "import_key": null,
+      "position": 9,
+      "tags": [
+        "activity.city_walk",
+        "subject.landmark",
+        "subject.architecture",
+        "subject.ocean_view",
+        "setting.waterside",
+        "setting.outdoors"
+      ],
+      "image_count": 5,
+      "covers": {
+        "8": {
+          "image_id": 124050,
+          "rel_path": "悉尼/phase_08_offset_080s/159_05-17-20_至_05-17-30/sydney__phase_08_offset_080s__sydney_001905_05-17-20__05-17-30__frame_00__abs_05-17-28.997.jpg",
+          "offset_seconds": 80
+        }
+      },
+      "images": [
+        {
+          "image_id": 124048,
+          "rel_path": "悉尼/phase_08_offset_080s/157_05-13-20_至_05-13-30/sydney__phase_08_offset_080s__sydney_001881_05-13-20__05-13-30__frame_00__abs_05-13-25.003.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001881_05-13-20__05-13-30__frame_00__abs_05-13-25.003.jpg",
+          "time_label": "05:13:25.003",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "沿着海湾边的草地步道前行，行人与海面并肩，路线再次回到开阔水岸。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 6,
+          "tags": [
+            "activity.city_walk",
+            "subject.ocean_view",
+            "subject.landscape",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124050,
+          "rel_path": "悉尼/phase_08_offset_080s/159_05-17-20_至_05-17-30/sydney__phase_08_offset_080s__sydney_001905_05-17-20__05-17-30__frame_00__abs_05-17-28.997.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001905_05-17-20__05-17-30__frame_00__abs_05-17-28.997.jpg",
+          "time_label": "05:17:28.997",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "Sydney Opera House从滨水步道尽头显现，熟悉的白色屋顶迎来旅程最后一段。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 2,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124051,
+          "rel_path": "悉尼/phase_08_offset_080s/160_05-19-20_至_05-19-30/sydney__phase_08_offset_080s__sydney_001917_05-19-20__05-19-30__frame_00__abs_05-19-24.996.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001917_05-19-20__05-19-30__frame_00__abs_05-19-24.996.jpg",
+          "time_label": "05:19:24.996",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "走近歌剧院广场，帆形屋顶与临海平台在晴空下铺展开来。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 3,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124052,
+          "rel_path": "悉尼/phase_08_offset_080s/160_05-19-20_至_05-19-30/sydney__phase_08_offset_080s__sydney_001917_05-19-20__05-19-30__frame_01__abs_05-19-29.000.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001917_05-19-20__05-19-30__frame_01__abs_05-19-29.000.jpg",
+          "time_label": "05:19:29.000",
+          "frame_index": 1,
+          "status": "未处理",
+          "note": "沿着歌剧院旁的开阔广场行走，海港大桥与白色屋顶同时进入视野。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 4,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        },
+        {
+          "image_id": 124053,
+          "rel_path": "悉尼/phase_08_offset_080s/161_05-21-20_至_05-21-30/sydney__phase_08_offset_080s__sydney_001929_05-21-20__05-21-30__frame_00__abs_05-21-22.997.jpg",
+          "source": "悉尼",
+          "filename": "sydney__phase_08_offset_080s__sydney_001929_05-21-20__05-21-30__frame_00__abs_05-21-22.997.jpg",
+          "time_label": "05:21:22.997",
+          "frame_index": 0,
+          "status": "未处理",
+          "note": "从海面一侧回望Sydney Opera House，白色帆形屋顶为这趟海港漫步留下收束的画面。",
+          "available": true,
+          "updated_at": "2026-10-28T12:42:38",
+          "position": 5,
+          "tags": [
+            "activity.city_walk",
+            "subject.landmark",
+            "subject.architecture",
+            "subject.ocean_view",
+            "setting.waterside",
+            "setting.outdoors"
+          ],
+          "phase": 8,
+          "offset_seconds": 80
+        }
+      ],
+      "exported_image_count": 5,
+      "cover_image_path": "悉尼/phase_08_offset_080s/159_05-17-20_至_05-17-30/sydney__phase_08_offset_080s__sydney_001905_05-17-20__05-17-30__frame_00__abs_05-17-28.997.jpg"
+    }
+  ]
+}
