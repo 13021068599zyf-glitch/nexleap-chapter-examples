@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-27T19:41:02",
+  "passed": true,
+  "checks": {
+    "source_present": true,
+    "split_complete": true,
+    "twelve_phases": true,
+    "group_complete": true,
+    "audits_complete": true,
+    "model_final_verified": true,
+    "jpeg_output_complete": true,
+    "html_complete": true,
+    "no_integrity_errors": true
+  },
+  "committed_batches": 161,
+  "split_segments": 1932,
+  "grouped_segments": 1932,
+  "phase_group_counts": {
+    "phase_00_offset_000s": 161,
+    "phase_01_offset_010s": 161,
+    "phase_02_offset_020s": 161,
+    "phase_03_offset_030s": 161,
+    "phase_04_offset_040s": 161,
+    "phase_05_offset_050s": 161,
+    "phase_06_offset_060s": 161,
+    "phase_07_offset_070s": 161,
+    "phase_08_offset_080s": 161,
+    "phase_09_offset_090s": 161,
+    "phase_10_offset_100s": 161,
+    "phase_11_offset_110s": 161
+  },
+  "verified_audits": 1932,
+  "audit_errors": 0,
+  "selected_frame_jpgs": 2735,
+  "valid_audit_frame_count": 2735,
+  "jpeg_only_copies": 2735,
+  "html_pages": 13,
+  "frame_count_distribution": {
+    "1": 1207,
+    "2": 652,
+    "3": 70,
+    "4": 1,
+    "5": 2
+  },
+  "model_final_verification": {
+    "verified_at": "2026-10-27T15:12:04",
+    "expected_clip_count": 1932,
+    "current_indexed_clips": 1932,
+    "completed_clips": 1932,
+    "missing_count": 0,
+    "selected_frame_count": 2735,
+    "complete": true,
+    "missing_examples": []
+  },
+  "integrity_errors": [],
+  "pending_html": [],
+  "source_video": "/Users/youtang/Downloads/Video_1080p/Sydney, Australia Walking Tour - 4K60fps with Captions - Prowalk Tours [dK3ih5op1F8].mp4",
+  "output_root": "/Users/youtang/Downloads/视频切分_10s_悉尼_20261027"
+}

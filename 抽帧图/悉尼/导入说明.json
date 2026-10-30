@@ -1,0 +1,57 @@
+{
+  "archive": "悉尼抽帧图片_按相位和时间段.zip",
+  "image_count": 2735,
+  "phase_count": 12,
+  "phases": [
+    {
+      "phase": 0,
+      "offset_seconds": 0
+    },
+    {
+      "phase": 1,
+      "offset_seconds": 10
+    },
+    {
+      "phase": 2,
+      "offset_seconds": 20
+    },
+    {
+      "phase": 3,
+      "offset_seconds": 30
+    },
+    {
+      "phase": 4,
+      "offset_seconds": 40
+    },
+    {
+      "phase": 5,
+      "offset_seconds": 50
+    },
+    {
+      "phase": 6,
+      "offset_seconds": 60
+    },
+    {
+      "phase": 7,
+      "offset_seconds": 70
+    },
+    {
+      "phase": 8,
+      "offset_seconds": 80
+    },
+    {
+      "phase": 9,
+      "offset_seconds": 90
+    },
+    {
+      "phase": 10,
+      "offset_seconds": 100
+    },
+    {
+      "phase": 11,
+      "offset_seconds": 110
+    }
+  ],
+  "imported_to": "抽帧图/悉尼",
+  "platform_filename_prefix": "sydney__phase_NN_offset_NNNs__"
+}
