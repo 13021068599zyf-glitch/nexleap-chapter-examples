@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>抽帧图整理 · Nexleap</title>
+  <meta name="description" content="在本地浏览抽帧图片、标记候选素材，并按 Day 和 Chapter 整理。">
+  <link rel="stylesheet" href="/styles.css?v=20261030-1">
+  <script src="/app.js?v=20261030-1" defer></script>
+</head>
+<body>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="素材导航">
+      <a class="brand" href="/" aria-label="抽帧图整理首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>素材整理</strong><small>NEXLEAP · 旅行影像</small></span>
+      </a>
+      <div class="sidebar-section">
+        <div class="section-label"><span>图片来源</span><span id="sourceTotal" class="section-total">—</span></div>
+        <nav id="sourceNav" class="nav-list" aria-label="图片来源"></nav>
+      </div>
+      <div class="sidebar-section chapter-section">
+        <div class="section-label"><span>Day / Chapter</span><span class="section-adds"><button id="newDayButton" class="add-small" type="button" aria-label="新建 Day" title="新建 Day">＋ Day</button><button id="newChapterButton" class="add-small" type="button" aria-label="新建 Chapter" title="新建 Chapter">＋ Chapter</button></span></div>
+        <nav id="dayNav" class="day-nav" aria-label="Day 列表"></nav>
+        <button id="orphanDayButton" class="nav-button day-button" type="button"><span class="nav-symbol">◫</span><span>未归入 Day</span><span id="orphanChapterCount" class="nav-count">0</span></button>
+        <nav id="chapterNav" class="nav-list" aria-label="Chapter 列表"></nav>
+        <button id="unassignedButton" class="nav-button unassigned-button" type="button"><span class="nav-symbol">◌</span><span>尚未归入 Chapter</span><span id="unassignedCount" class="nav-count">—</span></button>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="side-count"><strong id="indexedCount">—</strong><span>张图片已索引</span></div>
+        <p>原图保留在原文件夹，标注与 Day / Chapter 信息保存在本机。</p>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="crumb"><span class="crumb-mark"></span><span id="crumbLabel">全部图片</span></div>
+        <div class="top-actions">
+          <span id="saveState" class="save-state">本机已保存</span>
+          <a class="quiet-button viewer-entry" href="/chapters">Chapter 范例</a>
+          <button id="importButton" class="quiet-button" type="button">导入文件夹</button>
+          <input id="importFolderInput" type="file" webkitdirectory directory multiple hidden>
+          <button id="exportButton" class="quiet-button" type="button">导出整理结果</button>
+          <button id="scanButton" class="quiet-button" type="button">重新扫描</button>
+        </div>
+      </header>
+
+      <section class="content" aria-labelledby="pageTitle">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">素材库 <span>/</span> 旅行视频</p>
+            <h1 id="pageTitle">抽帧图整理</h1>
+            <p id="pageDescription" class="page-description">挑出值得保留的画面，再把它们编进不同 Chapter。</p>
+          </div>
+          <div class="heading-actions"><button id="createDayButton" class="quiet-button" type="button">＋ 新建 Day</button><button id="createChapterButton" class="primary-button" type="button"><span>＋</span> 新建 Chapter</button></div>
+        </div>
+
+        <section id="daySummary" class="chapter-summary day-summary" hidden>
+          <div class="chapter-summary-copy">
+            <div class="chapter-summary-top"><span class="chapter-kicker">当前 Day</span><button id="editDayButton" class="inline-edit" type="button">编辑信息</button><button id="exportDayButton" class="inline-edit" type="button">导出此 Day</button></div>
+            <h2 id="dayTitle"></h2><p id="dayIntro"></p><div id="dayChapters" class="day-chapter-links"></div>
+          </div>
+          <div class="chapter-summary-count"><strong id="dayImageCount">0</strong><span>张图片</span></div>
+        </section>
+
+        <section id="chapterSummary" class="chapter-summary" hidden>
+          <div class="chapter-summary-copy">
+            <div class="chapter-summary-top"><span id="chapterParentDay" class="chapter-kicker">当前 Chapter</span><button id="editChapterButton" class="inline-edit" type="button">编辑信息</button><button id="addSceneGroupButton" class="inline-edit" type="button">＋ 新建风貌组</button></div>
+            <h2 id="chapterTitle"></h2>
+            <p id="chapterIntro"></p>
+            <div id="chapterTags" class="tag-list"></div>
+          </div>
+          <div id="chapterCoverFrame" class="chapter-cover-frame">
+            <img id="chapterCover" class="chapter-cover" alt="Chapter 封面" hidden>
+            <div id="chapterCoverEmpty" class="chapter-cover-empty"><span>暂无封面</span><small>从下方图片中选择</small></div>
+            <span id="chapterCoverGroup" class="chapter-cover-group">偏移为0组</span>
+          </div>
+          <div class="chapter-summary-count"><strong id="chapterImageCount">0</strong><span>张图片</span></div>
+        </section>
+
+        <div class="toolbar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜索图片</span><input id="searchInput" type="search" placeholder="搜索文件名、时间或标签" autocomplete="off"></label>
+          <label class="filter-select"><span id="statusFilterLabel">图片状态</span><select id="statusFilter" aria-label="图片状态筛选"><option value="">全部状态</option><option value="终选">终选</option><option value="候选">候选</option><option value="未选">未选</option><option value="未处理">未处理</option><option value="排除">排除</option></select></label>
+          <label class="filter-select phase-filter"><span>抽帧组</span><select id="phaseFilter"><option value="">全部抽帧组</option></select></label>
+          <div class="view-summary"><strong id="visibleCount">—</strong><span>张图片</span></div>
+        </div>
+        <p id="timelineNote" class="timeline-note" hidden>同一来源下按视频时间排列；不同抽帧组的画面会交错出现。</p>
+
+        <div id="selectionBar" class="selection-bar" hidden>
+          <div class="selection-copy"><strong id="selectionCount">0</strong><span>张已选</span><button id="clearSelectionButton" class="link-button" type="button">清除</button></div>
+          <div class="selection-actions">
+            <select id="bulkStatusSelect" aria-label="批量标记状态"><option value="">标记状态</option><option value="终选">设为终选</option><option value="候选">设为候选</option><option value="未选">设为未选</option><option value="未处理">设为未处理</option><option value="排除">设为排除</option></select>
+            <button id="assignButton" class="primary-button small-primary" type="button">加入 Chapter</button>
+            <button id="assignGroupButton" class="quiet-button small-primary" type="button" hidden>归入风貌组</button>
+            <button id="ungroupSelectedButton" class="quiet-button small-primary" type="button" hidden>移回未分组</button>
+            <button id="removeSelectedButton" class="danger-button small-primary" type="button" hidden>移出当前 Chapter</button>
+          </div>
+        </div>
+
+        <div id="imageGrid" class="image-grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <span class="empty-mark">◌</span><h2>这里还没有图片</h2><p>换一个来源或筛选条件，或者重新扫描图片文件夹。</p>
+        </div>
+        <div class="load-more-wrap"><button id="loadMoreButton" class="load-more" type="button" hidden>加载更多图片</button></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="imageDialog" class="image-dialog">
+    <div class="image-dialog-layout">
+      <div class="preview-area"><button class="close-button preview-close" type="button" data-close="imageDialog" aria-label="关闭">×</button><img id="previewImage" alt="抽帧图片预览"></div>
+      <form id="imageForm" class="image-editor">
+        <div class="dialog-header"><div><p class="eyebrow">图片标注</p><h2 id="imageDialogTitle">编辑图片</h2></div><button class="close-button" type="button" data-close="imageDialog" aria-label="关闭">×</button></div>
+        <p id="imageFilename" class="filename"></p>
+        <div id="imageMeta" class="image-meta"></div>
+        <label class="field-label">整理状态<select id="imageStatus"><option>未处理</option><option>终选</option><option>候选</option><option>未选</option><option>排除</option></select></label>
+        <label class="field-label">图片标签<input id="imageTags" type="text" placeholder="例如：入口、展品、同行互动"><small>多个标签用逗号分开</small></label>
+        <label class="field-label">备注<textarea id="imageNote" rows="4" placeholder="记录这张图值得保留的原因"></textarea></label>
+        <div class="editor-chapter-row"><span id="imageChapterHint">还没有加入 Chapter</span><button id="imageAssignButton" class="quiet-button" type="button">加入 Chapter</button></div>
+        <div id="chapterTimelineHint" class="editor-chapter-row" hidden><span>Chapter 图片会按视频时间自动排列</span></div>
+        <div class="dialog-footer"><button id="setCoverButton" class="quiet-button" type="button" hidden>设为封面</button><button class="primary-button" type="submit">保存标注</button></div>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog id="chapterDialog" class="form-dialog">
+    <form id="chapterForm">
+      <div class="dialog-header"><div><p class="eyebrow">Chapter 信息</p><h2 id="chapterDialogTitle">新建 Chapter</h2></div><button class="close-button" type="button" data-close="chapterDialog" aria-label="关闭">×</button></div>
+      <label class="field-label">标题<input id="chapterNameInput" type="text" maxlength="120" placeholder="给这段经历起个标题" required></label>
+      <label class="field-label">所属 Day<select id="chapterDaySelect"><option value="">未归入 Day</option></select></label>
+      <label class="field-label">标签<input id="chapterTagsInput" type="text" placeholder="例如：博物馆、亲子、城市漫步"><small>多个标签用逗号分开</small></label>
+      <label class="field-label">简介<textarea id="chapterIntroInput" rows="5" maxlength="2000" placeholder="简单说明这个 Chapter 收录的内容"></textarea></label>
+      <div class="dialog-footer"><button id="deleteChapterButton" class="danger-button" type="button" hidden>删除 Chapter</button><button class="primary-button" type="submit">保存 Chapter</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="sceneGroupDialog" class="form-dialog">
+    <form id="sceneGroupForm">
+      <div class="dialog-header"><div><p class="eyebrow">Chapter 风貌组</p><h2 id="sceneGroupDialogTitle">新建风貌组</h2></div><button class="close-button" type="button" data-close="sceneGroupDialog" aria-label="关闭">×</button></div>
+      <label class="field-label">主题标题<input id="sceneGroupTitle" type="text" maxlength="120" placeholder="例如：林间、溪泉、湖泊" required></label>
+      <label class="field-label">共用描述<textarea id="sceneGroupDescription" rows="5" maxlength="2000" placeholder="描述这一组画面的共同风貌"></textarea></label>
+      <div class="dialog-footer"><button id="deleteSceneGroupButton" class="danger-button" type="button" hidden>删除风貌组</button><button class="primary-button" type="submit">保存风貌组</button></div>
+    </form>
+  </dialog>
+  <dialog id="sceneGroupAssignDialog" class="form-dialog assign-dialog">
+    <form id="sceneGroupAssignForm">
+      <div class="dialog-header"><div><p class="eyebrow">素材归组</p><h2>归入风貌组</h2></div><button class="close-button" type="button" data-close="sceneGroupAssignDialog" aria-label="关闭">×</button></div>
+      <p id="sceneGroupAssignDescription" class="dialog-description"></p>
+      <label class="field-label">选择风貌组<select id="sceneGroupSelect" required></select></label>
+      <div class="dialog-footer"><button class="quiet-button" type="button" data-close="sceneGroupAssignDialog">取消</button><button class="primary-button" type="submit">确认归组</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="dayDialog" class="form-dialog">
+    <form id="dayForm">
+      <div class="dialog-header"><div><p class="eyebrow">Day 信息</p><h2 id="dayDialogTitle">新建 Day</h2></div><button class="close-button" type="button" data-close="dayDialog" aria-label="关闭">×</button></div>
+      <label class="field-label">标题<input id="dayNameInput" type="text" maxlength="120" placeholder="例如：Day 1 · 城市初见" required></label>
+      <label class="field-label">简介<textarea id="dayIntroInput" rows="5" maxlength="2000" placeholder="概括这一天的主题或行程"></textarea></label>
+      <div class="dialog-footer"><button id="deleteDayButton" class="danger-button" type="button" hidden>删除 Day</button><button class="primary-button" type="submit">保存 Day</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="assignDialog" class="form-dialog assign-dialog">
+    <form id="assignForm">
+      <div class="dialog-header"><div><p class="eyebrow">素材归类</p><h2>加入 Chapter</h2></div><button class="close-button" type="button" data-close="assignDialog" aria-label="关闭">×</button></div>
+      <p id="assignDescription" class="dialog-description"></p>
+      <label class="field-label">选择 Chapter<select id="assignChapterSelect" required></select></label>
+      <div class="dialog-footer"><button class="quiet-button" type="button" data-close="assignDialog">取消</button><button class="primary-button" type="submit">确认加入</button></div>
+    </form>
+  </dialog>
+  <dialog id="importDialog" class="form-dialog import-dialog">
+    <div class="dialog-header"><div><p class="eyebrow">素材入库</p><h2>正在导入文件夹</h2></div><button id="importDialogClose" class="close-button" type="button" data-close="importDialog" aria-label="关闭" disabled>×</button></div>
+    <p id="importFolderName" class="dialog-description">正在准备图片……</p>
+    <progress id="importProgress" class="import-progress" value="0" max="1">0%</progress>
+    <div class="import-counts" aria-live="polite">
+      <span><strong id="importCompleted">0</strong><small>已处理</small></span>
+      <span><strong id="importAdded">0</strong><small>新增</small></span>
+      <span><strong id="importSkipped">0</strong><small>已存在</small></span>
+      <span><strong id="importFailed">0</strong><small>失败</small></span>
+    </div>
+    <p id="importStatus" class="import-status">选择文件夹后将自动开始。</p>
+    <div class="dialog-footer"><button id="importDoneButton" class="primary-button" type="button" data-close="importDialog" disabled>完成</button></div>
+  </dialog>
+  <dialog id="exportDialog" class="form-dialog export-dialog">
+    <form id="exportForm">
+      <div class="dialog-header"><div><p class="eyebrow">整理结果</p><h2>导出 Day</h2></div><button class="close-button" type="button" data-close="exportDialog" aria-label="关闭">×</button></div>
+      <p class="dialog-description">在本机生成整理文件夹，包含所选 Day 的原图、每张图片对应的文字，以及 Day 和 Chapter 的标题与简介。</p>
+      <label class="field-label">导出范围<select id="exportDaySelect"><option value="">全部 Day</option></select></label>
+      <label class="field-label">偏移组<select id="exportPhaseSelect"><option value="">全部偏移组</option></select><small>选择后，每个 Chapter 只导出该偏移组中的图片。</small></label>
+      <div id="exportSummary" class="export-summary"></div>
+      <div class="dialog-footer"><button class="quiet-button" type="button" data-close="exportDialog">关闭</button><button id="exportSubmitButton" class="primary-button" type="submit">生成文件夹</button></div>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

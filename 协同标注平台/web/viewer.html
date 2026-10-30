@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfbfa">
+  <title>Chapter 范例查看页 · Nexleap</title>
+  <meta name="description" content="按 Day、Chapter 与偏移组查看已经整理完成的 Chapter 范例。">
+  <link rel="stylesheet" href="/viewer.css?v=20261026-2">
+  <script src="/viewer.js?v=20261026-2" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="viewer-brand" href="/chapters" aria-label="Chapter 范例查看页首页">
+      <span class="viewer-brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>Chapter 范例查看页</strong><small>NEXLEAP · CHAPTER EXAMPLES</small></span>
+    </a>
+    <div class="header-meta">
+      <span id="archiveCount">正在读取数据库</span>
+      <a href="/standalone" download="Chapter范例查看器.html">下载独立版</a>
+      <a href="/">返回整理器</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="day-stage" aria-labelledby="dayTitle">
+      <div class="day-visual" aria-hidden="true">
+        <img id="dayHeroImage" alt="" hidden>
+        <div class="day-visual-shade"></div>
+        <span id="heroGroupBadge" class="hero-group-badge">偏移组</span>
+      </div>
+      <div class="day-stage-copy">
+        <p class="route-eyebrow">TRAVEL LOG / 旅行记录</p>
+        <h1 id="dayTitle">正在载入旅程</h1>
+        <p id="dayIntro" class="day-intro">从数据库读取 Day 与 Chapter 信息。</p>
+        <dl class="day-stats">
+          <div><dt id="dayChapterCount">—</dt><dd>段行程</dd></div>
+          <div><dt id="dayImageCount">—</dt><dd>张画面</dd></div>
+          <div><dt id="dayGroupValue">—</dt><dd>当前偏移</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="archive-controls" aria-label="旅程筛选">
+      <div class="day-switcher-wrap">
+        <span class="control-label">选择 Day</span>
+        <nav id="daySwitcher" class="day-switcher" aria-label="Day 列表"></nav>
+      </div>
+      <label class="group-control">
+        <span class="control-label">画面分组</span>
+        <select id="phaseSelect" aria-label="选择偏移组"></select>
+      </label>
+    </section>
+
+    <section class="journey-layout">
+      <aside class="route-panel" aria-label="Chapter 路线">
+        <div class="route-heading">
+          <span>当天路线</span>
+          <small>按画面时间排列</small>
+        </div>
+        <nav id="chapterRoute" class="chapter-route"></nav>
+      </aside>
+
+      <article class="chapter-view" aria-live="polite">
+        <section id="chapterHeader" class="chapter-header">
+          <div class="chapter-heading-copy">
+            <p id="chapterSequence" class="chapter-sequence">CHAPTER</p>
+            <h2 id="chapterTitle">请选择 Chapter</h2>
+            <p id="chapterIntro">选择左侧路线中的一段旅程，查看整理后的图片与文字。</p>
+            <div id="chapterTags" class="chapter-tags"></div>
+          </div>
+          <figure class="chapter-cover-figure">
+            <img id="chapterCover" alt="" hidden>
+            <div id="chapterCoverEmpty" class="cover-empty">本组暂无封面</div>
+            <figcaption><span id="chapterCoverLabel">CHAPTER COVER</span><strong id="chapterImageTotal">0 张</strong></figcaption>
+          </figure>
+        </section>
+
+        <div class="gallery-heading">
+          <div><span>IMAGE NOTES</span><h3>沿时间展开的画面</h3></div>
+          <p>点击图片查看大图与完整备注</p>
+        </div>
+        <section id="imageGallery" class="image-gallery" aria-label="Chapter 图片"></section>
+        <div id="viewerEmpty" class="viewer-empty" hidden>
+          <span>○</span><h3>这个偏移组还没有画面</h3><p>可切换其他偏移组继续查看。</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Chapter 范例数据库 · 本机只读查看</span>
+    <span id="footerStatus">数据来自图片整理平台</span>
+  </footer>
+
+  <dialog id="imageDialog" class="image-dialog">
+    <button id="dialogClose" class="dialog-close" type="button" aria-label="关闭">×</button>
+    <div class="dialog-image-wrap"><img id="dialogImage" alt=""></div>
+    <div class="dialog-copy">
+      <p id="dialogMeta" class="dialog-meta"></p>
+      <h2 id="dialogTitle"></h2>
+      <p id="dialogNote"></p>
+    </div>
+  </dialog>
+</body>
+</html>
