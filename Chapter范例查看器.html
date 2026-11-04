@@ -94,6 +94,20 @@
     .gallery-head span { color: var(--green); font-family: var(--mono); font-size: 7px; letter-spacing: .12em; }
     .gallery-head h3 { margin: 5px 0 0; font-family: var(--serif); font-size: 21px; font-weight: 600; }
     .gallery-head p { margin: 0; color: var(--faint); font-size: 8px; }
+    .status-overview { display: flex; flex-wrap: wrap; gap: 7px; margin: 25px 0 0; }
+    .status-filter { padding: 7px 11px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--muted); cursor: pointer; font-size: 10px; }
+    .status-filter.active { border-color: #8ba58e; background: var(--green-soft); color: var(--green); font-weight: 600; }
+    .status-filter strong { margin-left: 5px; font-family: var(--mono); }
+    .scene-group { margin: 26px 0 42px; }
+    .scene-group-head { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; padding: 14px 0; border-top: 1px solid var(--line); }
+    .scene-group-head h4 { margin: 0; font-family: var(--serif); font-size: 19px; }
+    .scene-group-head p { margin: 6px 0 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+    .scene-group-head small { flex: none; color: var(--faint); font-size: 9px; }
+    .status-badge { display: inline-block; margin: 0 0 5px; padding: 3px 7px; border-radius: 4px; background: var(--soft); color: var(--muted); font-size: 9px; }
+    .status-badge[data-status="终选"] { background: #e5f1e6; color: #2d6337; }
+    .status-badge[data-status="候选"] { background: #fff0d9; color: #8b5b18; }
+    .status-badge[data-status="未选"], .status-badge[data-status="排除"] { background: #f2e9e9; color: #875858; }
+    .image-tags { margin-top: 5px; color: var(--faint); font-size: 9px; overflow-wrap: anywhere; }
     .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 18px; }
     .image-entry { min-width: 0; margin: 0; }
     .image-entry button { width: 100%; display: block; overflow: hidden; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); cursor: zoom-in; }
@@ -173,8 +187,9 @@
           <div><p id="sequence" class="sequence"></p><h2 id="chapterTitle" class="chapter-title"></h2><p id="chapterIntro" class="chapter-intro"></p><div id="tags" class="tags"></div></div>
           <figure class="cover"><img id="chapterCover" alt=""><figcaption><span id="coverLabel"></span><strong id="chapterImageCount"></strong></figcaption></figure>
         </section>
-        <div class="gallery-head"><div><span>IMAGE NOTES</span><h3>图片与备注</h3></div><p>点击图片查看大图</p></div>
-        <section id="gallery" class="gallery" aria-label="Chapter 图片"></section>
+        <div class="gallery-head"><div><span>SCENE GROUPS / IMAGE STATUS</span><h3>风貌组与图片</h3></div><p>点击图片查看大图</p></div>
+        <div id="statusOverview" class="status-overview" aria-label="按图片状态筛选"></div>
+        <section id="gallery" aria-label="Chapter 风貌组与图片"></section>
         <div id="missingWarning" class="warning" hidden></div>
       </article>
     </section>
@@ -187,7 +202,7 @@
   </dialog>
 
   <script>
-    const state = { days: [], dayIndex: 0, chapterIndex: 0, urls: [], directoryHandle: null, rootName: "", packageCount: 0 };
+    const state = { days: [], dayIndex: 0, chapterIndex: 0, statusFilter: "全部", urls: [], directoryHandle: null, rootName: "", packageCount: 0 };
     const $ = (selector) => document.querySelector(selector);
     const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 
@@ -245,7 +260,18 @@
             return { ...image, url: fileUrl(file) };
           }).filter(Boolean);
           const cover = images.find((image) => image.rel_path === chapter.cover_image_path) || images[0] || null;
-          return { ...chapter, images, cover };
+          const imageById = new Map(images.map((image) => [String(image.image_id), image]));
+          const imageByPath = new Map(images.map((image) => [image.rel_path, image]));
+          const groupedPaths = new Set();
+          const sceneGroups = (chapter.scene_groups || []).map((group) => {
+            const groupImages = (group.images || group.image_ids || []).map((entry) => {
+              const image = imageById.get(String(typeof entry === "object" ? entry.image_id : entry)) || imageByPath.get(entry?.rel_path);
+              if (image) groupedPaths.add(image.rel_path);
+              return image;
+            }).filter(Boolean);
+            return { ...group, images: groupImages };
+          });
+          return { ...chapter, images, cover, sceneGroups, ungroupedImages: images.filter((image) => !groupedPaths.has(image.rel_path)) };
         });
         return { ...day, chapters, __manifest: manifest, __packageName: packageName, __missing: missing };
       });
@@ -363,6 +389,10 @@
       const offset = day?.__manifest?.filters?.offset_seconds;
       return offset === null || offset === undefined ? "全部偏移组" : `偏移为${offset}组`;
     }
+    const statusNames = ["终选", "候选", "未选", "排除", "未处理"];
+    function renderImage(image, index) {
+      return `<figure class="image-entry"><button type="button" data-image="${index}" aria-label="查看第 ${index + 1} 张图片，状态${escapeHtml(image.status || "未处理")}"><img src="${image.url}" alt="${escapeHtml(image.note || image.filename || "Chapter 图片")}"></button><figcaption><span class="index">${String(index + 1).padStart(2, "0")}</span><span><span class="time">${escapeHtml(image.time_label || "时间未知")}</span><span class="status-badge" data-status="${escapeHtml(image.status || "未处理")}">${escapeHtml(image.status || "未处理")}</span><p class="note">${escapeHtml(image.note || "暂无备注。")}</p>${image.tags?.length ? `<div class="image-tags">${escapeHtml(image.tags.join(" · "))}</div>` : ""}</span></figcaption></figure>`;
+    }
 
     function render() {
       const day = activeDay();
@@ -400,7 +430,15 @@
       $("#chapterCover").alt = `${chapter.title}封面`;
       $("#coverLabel").textContent = `CHAPTER COVER · ${offsetLabel()}`;
       $("#chapterImageCount").textContent = `${chapter.images.length} 张`;
-      $("#gallery").innerHTML = chapter.images.map((image, index) => `<figure class="image-entry"><button type="button" data-image="${index}" aria-label="查看第 ${index + 1} 张图片"><img src="${image.url}" alt="${escapeHtml(image.note || image.filename || "Chapter 图片")}"></button><figcaption><span class="index">${String(index + 1).padStart(2, "0")}</span><span><span class="time">${escapeHtml(image.time_label || "时间未知")}</span><p class="note">${escapeHtml(image.note || "暂无备注。")}</p></span></figcaption></figure>`).join("");
+      const counts = Object.fromEntries(statusNames.map((status) => [status, chapter.images.filter((image) => (image.status || "未处理") === status).length]));
+      $("#statusOverview").innerHTML = ["全部", ...statusNames].map((status) => `<button class="status-filter ${state.statusFilter === status ? "active" : ""}" type="button" data-status-filter="${status}" aria-pressed="${state.statusFilter === status}">${status}<strong>${status === "全部" ? chapter.images.length : counts[status]}</strong></button>`).join("");
+      const groups = [...chapter.sceneGroups];
+      if (chapter.ungroupedImages.length) groups.push({ title: "未分组图片", description: chapter.sceneGroups.length ? "尚未归入风貌组的画面" : "此导出包尚未包含风貌组信息", images: chapter.ungroupedImages });
+      $("#gallery").innerHTML = groups.map((group, groupIndex) => {
+        const visible = group.images.filter((image) => state.statusFilter === "全部" || (image.status || "未处理") === state.statusFilter);
+        if (!visible.length && state.statusFilter !== "全部") return "";
+        return `<section class="scene-group"><div class="scene-group-head"><div><h4>${String(groupIndex + 1).padStart(2, "0")} · ${escapeHtml(group.title || "未命名风貌组")}</h4>${group.description ? `<p>${escapeHtml(group.description)}</p>` : ""}</div><small>${visible.length}${visible.length === group.images.length ? "" : ` / ${group.images.length}`} 张</small></div><div class="gallery">${visible.map((image) => renderImage(image, chapter.images.indexOf(image))).join("")}</div></section>`;
+      }).join("") || `<p class="warning">此 Chapter 没有“${escapeHtml(state.statusFilter)}”状态的图片。</p>`;
       $("#missingWarning").hidden = !activeDay().__missing;
       $("#missingWarning").textContent = activeDay().__missing ? `${activeDay().__packageName} 中有 ${activeDay().__missing} 张图片未找到，当前页面已显示其余内容。` : "";
     }
@@ -411,9 +449,9 @@
       if (!image) return;
       $("#dialogImage").src = image.url;
       $("#dialogImage").alt = image.note || image.filename || "Chapter 图片";
-      $("#dialogMeta").textContent = `${offsetLabel()} · ${image.time_label || "时间未知"}`;
+      $("#dialogMeta").textContent = `${offsetLabel()} · ${image.time_label || "时间未知"} · ${image.status || "未处理"}`;
       $("#dialogTitle").textContent = chapter.title;
-      $("#dialogNote").textContent = image.note || "暂无备注。";
+      $("#dialogNote").textContent = [image.note || "暂无备注。", image.tags?.length ? `标签：${image.tags.join(" · ")}` : ""].filter(Boolean).join("\n");
       $("#imageDialog").showModal();
     }
 
@@ -421,11 +459,13 @@
       if (event.target.closest("[data-pick-folder]")) pickDirectory().catch((error) => { if (error.name !== "AbortError") showError(error.message); });
       if (event.target.closest("[data-refresh]") && state.directoryHandle) loadDirectory(state.directoryHandle).catch((error) => showError(error.message));
       const day = event.target.closest("[data-day]");
-      if (day) { state.dayIndex = Number(day.dataset.day); state.chapterIndex = 0; render(); }
+      if (day) { state.dayIndex = Number(day.dataset.day); state.chapterIndex = 0; state.statusFilter = "全部"; render(); }
       const chapter = event.target.closest("[data-chapter]");
       if (chapter) { state.chapterIndex = Number(chapter.dataset.chapter); render(); $("#chapterHead").scrollIntoView({ behavior: "smooth", block: "start" }); }
       const image = event.target.closest("[data-image]");
       if (image) openImage(Number(image.dataset.image));
+      const statusFilter = event.target.closest("[data-status-filter]");
+      if (statusFilter) { state.statusFilter = statusFilter.dataset.statusFilter; renderChapter(); }
     });
     $("#folderInput").addEventListener("change", async (event) => {
       try { await loadFolder(event.target.files); }
